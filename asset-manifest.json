@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/dizi/static/js/main.c4d2c783.js",
+    "main.css": "/dizi/static/css/main.c9258e83.css",
+    "main.js": "/dizi/static/js/main.1ca474be.js",
     "index.html": "/dizi/index.html",
-    "main.c4d2c783.js.map": "/dizi/static/js/main.c4d2c783.js.map"
+    "main.c9258e83.css.map": "/dizi/static/css/main.c9258e83.css.map",
+    "main.1ca474be.js.map": "/dizi/static/js/main.1ca474be.js.map"
   },
   "entrypoints": [
-    "static/js/main.c4d2c783.js"
+    "static/css/main.c9258e83.css",
+    "static/js/main.1ca474be.js"
   ]
 }
