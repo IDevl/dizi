@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dizi/static/css/main.c9258e83.css",
-    "main.js": "/dizi/static/js/main.1ca474be.js",
+    "main.css": "/dizi/static/css/main.762af5af.css",
+    "main.js": "/dizi/static/js/main.eecd53e7.js",
     "index.html": "/dizi/index.html",
-    "main.c9258e83.css.map": "/dizi/static/css/main.c9258e83.css.map",
-    "main.1ca474be.js.map": "/dizi/static/js/main.1ca474be.js.map"
+    "main.762af5af.css.map": "/dizi/static/css/main.762af5af.css.map",
+    "main.eecd53e7.js.map": "/dizi/static/js/main.eecd53e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9258e83.css",
-    "static/js/main.1ca474be.js"
+    "static/css/main.762af5af.css",
+    "static/js/main.eecd53e7.js"
   ]
 }
