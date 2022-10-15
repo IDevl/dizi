@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/dizi/static/js/main.c4d2c783.js",
+    "index.html": "/dizi/index.html",
+    "main.c4d2c783.js.map": "/dizi/static/js/main.c4d2c783.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c4d2c783.js"
+  ]
+}
