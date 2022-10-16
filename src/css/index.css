@@ -31,7 +31,7 @@
         border-radius: 0.5rem;
         background-color: rgb(33 36 37 / var(--tw-bg-opacity));
         cursor: pointer;
-        transition: 400ms;
+        transition: 300ms;
     }
 
     .socialbtn:hover {
@@ -53,7 +53,7 @@
         font-family: Poppins, sans-serif;
         font-size: .8125rem;
         font-weight: 500;
-        transition: 400ms;
+        transition: 300ms;
     }
 
     .menu-active,
@@ -81,8 +81,8 @@
         align-items: center;
         justify-content: center;
         border-radius: 9999px;
-        background-image: linear-gradient(to right, var(--tw-gradient-stops));
-        color: rgb(255 255 255 / var(--tw-text-opacity));
+        background-color: rgb(255 255 255 / var(--tw-text-opacity));
+        color: rgb(0 0 0 / var(--tw-text-opacity));
         transition-property: all;
         transition-duration: 300ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -90,6 +90,7 @@
 
     .menu-toggle-btn-active {
         background-image: linear-gradient(to left, var(--tw-gradient-stops));
+        color: rgb(255 255 255 / var(--tw-text-opacity));
     }
 
     .mobile-menu-items {
