@@ -56,7 +56,8 @@
         transition: 400ms;
     }
 
-    .menu-active, .menu-item:hover {
+    .menu-active,
+    .menu-item:hover {
         display: flex;
         height: 5rem;
         width: 5rem;
@@ -71,13 +72,45 @@
         font-weight: 500;
     }
 
+    .menu-toggle-btn {
+        margin-left: 0.75rem;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .menu-toggle-btn-active {
+        background-image: linear-gradient(to left, var(--tw-gradient-stops));
+    }
+
+    .mobile-menu-items {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        padding: 0.625rem 1rem;
+        font-size: .8125rem;
+        font-weight: 500;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        transition-duration: 300ms;
+    }
+
+    .mobile-menu-items-active {
+        color: rgb(250 82 82 / var(--tw-text-opacity));
+    }
+
     .page-title-headline {
         color: rgb(255 255 255 / var(--tw-text-opacity));
         font-size: 2.5rem;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
     }
 
     .page-title-headline::after {
@@ -86,14 +119,5 @@
         background-image: linear-gradient(to right, var(--tw-gradient-stops));
         content: var(--tw-content);
         width: 10rem;
-    }
-
-    .about-box {
-        display: flex;
-        gap: 1rem;
-        border-radius: 0.75rem;
-        border-color: rgb(33 36 37 / var(--tw-border-opacity));
-        padding: 1.5rem;
-        border-width: 2px;
     }
 }

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer class="overflow-hidden rounded-b-2xl bg-[#f8fbfb] dark:bg-[#212425]">
+      <footer class="overflow-hidden rounded-b-2xl bg-[#212425]">
         <p class="text-center font-medium py-6 text-[#a6a6a6]">
           Jefferson Dela Cruz • 2022
         </p>
