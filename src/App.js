@@ -19,6 +19,7 @@ export default function App() {
 
   return (
     <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full">
+      
       {loader && <Loader />}
 
       <HeaderMobile page={page} />
