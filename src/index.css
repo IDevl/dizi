@@ -105,13 +105,13 @@
     }
 
     .mobile-menu-items-active {
-        color: rgb(250 82 82 / var(--tw-text-opacity));
+        color: #ff2222;
     }
 
     .page-title-headline {
         color: rgb(255 255 255 / var(--tw-text-opacity));
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 2.6rem;
+        font-weight: 600;
     }
 
     .page-title-headline::after {
