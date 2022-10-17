@@ -34,7 +34,7 @@ export default function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="./" element={<About />} />
-                <Route path="resume" element={<Resume />} />
+                <Route path="./resume" element={<Resume />} />
               </Routes>
             </BrowserRouter>
             <Footer />
