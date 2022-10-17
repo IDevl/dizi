@@ -4,7 +4,6 @@ import NavbarMobile from "./navbar_mobile";
 import { useState } from "react";
 import classnames from "classnames";
 
-
 export default function HeaderMobile(page) {
   const [menuToggle, setMenuToggle] = useState(false);
 

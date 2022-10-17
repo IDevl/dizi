@@ -15,6 +15,7 @@ export default function App() {
   
   useEffect(() => {
     
+    console.log(window.location.pathname)
     setPage(window.location.pathname);
 
     setTimeout(() => {
