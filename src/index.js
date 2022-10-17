@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "./pages/loader/preloader.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router baseline="/">
       <App />
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );

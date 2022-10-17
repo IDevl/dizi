@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
+import { Link } from "react-router-dom";
 
 export default function Navbar(page) {
-
   console.log("page =" + page.page + ", " + `${process.env.REACT_APP_SUB_URL}/`);
 
   return (
@@ -13,30 +13,30 @@ export default function Navbar(page) {
         <ul class="flex gap-3.5">
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/` && "menu-active")} href="./">
+            <Link className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/` && "menu-active")} to="/">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faUser} />
               </span>{" "}
               About{" "}
-            </a>
+            </Link>
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/resume` && "menu-active")} href="./resume">
+            <Link className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/resume` && "menu-active")} to="/resume">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faFileLines} />
               </span>{" "}
               Resume{" "}
-            </a>
+            </Link>
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/projects` && "menu-active")} href="./projects">
+            <Link className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/projects` && "menu-active")} to="/projects">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}
               Projects{" "}
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
