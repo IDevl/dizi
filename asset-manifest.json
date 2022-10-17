@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dizi/static/css/main.549c145b.css",
-    "main.js": "/dizi/static/js/main.093426fa.js",
+    "main.js": "/dizi/static/js/main.1186487f.js",
     "static/media/profile-pic.jpg": "/dizi/static/media/profile-pic.1fd49480a367675dc681.jpg",
     "index.html": "/dizi/index.html",
     "main.549c145b.css.map": "/dizi/static/css/main.549c145b.css.map",
-    "main.093426fa.js.map": "/dizi/static/js/main.093426fa.js.map"
+    "main.1186487f.js.map": "/dizi/static/js/main.1186487f.js.map"
   },
   "entrypoints": [
     "static/css/main.549c145b.css",
-    "static/js/main.093426fa.js"
+    "static/js/main.1186487f.js"
   ]
 }
