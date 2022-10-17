@@ -11,7 +11,7 @@ export default function HeaderMobile(page) {
   return (
     <div class="sticky top-0 z-[9999] block lg:hidden">
       <div class="w-full flex items-center justify-between px-4 py-5 bg-black">
-        <a class="rounded-xl bg-gradient-to-r from-[#df0000] to-[#550089] py-[1.5px] px-[13px] font-bold text-white text-[1.4rem] tracking-[.05em]" href="./">
+        <a class="rounded-lg bg-gradient-to-r from-[#df0000] to-[#550089] py-[1.5px] px-[13px] font-bold text-white text-[1.4rem] tracking-[.05em]" href="./">
           DC
         </a>
         <div class="flex items-center">
