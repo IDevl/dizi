@@ -48,23 +48,23 @@ export default function About() {
         <h3 class="text-[2.2rem] text-white font-semibold pb-5"> What I do! </h3>
         <div class="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
           <div class="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon class="text-[#AF54D2] max-h-[35px]" icon={faLaptop} />
+            <FontAwesomeIcon class="text-[#00c4ff] max-h-[35px]" icon={faLaptop} />
             <div class="space-y-2">
               <h3 class="text-white text-[1.25rem] font-semibold"> Web Development </h3>
               <p class="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Lorem Ipsum </p>
             </div>
           </div>
           <div class="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon class="text-[#AF54D2] max-h-[35px]" icon={faLaptop} />
+            <FontAwesomeIcon class="text-[#AF54D2] max-h-[35px]" icon={faMobile} />
             <div class="space-y-2">
-              <h3 class="text-white text-[1.25rem] font-semibold"> Web Development </h3>
+              <h3 class="text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
               <p class="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Lorem Ipsum </p>
             </div>
           </div>
           <div class="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon class="text-[#AF54D2] max-h-[35px]" icon={faLaptop} />
+            <FontAwesomeIcon class="text-[#ff0000] max-h-[35px]" icon={faUncharted} />
             <div class="space-y-2">
-              <h3 class="text-white text-[1.25rem] font-semibold"> Web Development </h3>
+              <h3 class="text-white text-[1.25rem] font-semibold"> Software Development </h3>
               <p class="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Lorem Ipsum </p>
             </div>
           </div>
