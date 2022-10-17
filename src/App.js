@@ -4,12 +4,14 @@ import HeaderMobile from "./pages/header/header_mobile";
 import Footer from "./pages/footer/footer";
 import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
+import Resume from "./pages/resume/resume";
 import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
 
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,8 +21,7 @@ export default function App() {
 
   return (
     <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full">
-      
-      {/* {loader && <Loader />} */}
+      {loader && <Loader />}
 
       <HeaderMobile page={page} />
       <div class="container grid grid-cols-12 md:gap-10 justify-between">
@@ -30,7 +31,12 @@ export default function App() {
         <div class="col-span-12 lg:col-span-8 lg:mt-[220px]">
           <Navbar page={page} />
           <div class="lg:rounded-2xl bg-[#111111]">
-            <About />
+            <BrowserRouter>
+              <Routes>
+                <Route index element={<About />} />
+                <Route path="resume" element={<Resume />} />
+              </Routes>
+            </BrowserRouter>
             <Footer />
           </div>
         </div>

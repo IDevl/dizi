@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faUser, faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import classnames from 'classnames';
 
@@ -14,6 +14,12 @@ export default function NavbarMobile(page) {
               <FontAwesomeIcon icon={faUser} />
             </span>{" "}
             About
+          </a>
+          <a className={classnames("mobile-menu-items", page.page.page === "resume" && "mobile-menu-items-active")} href="./">
+            <span class="mr-2 text-xl">
+              <FontAwesomeIcon icon={faFileLines} />
+            </span>{" "}
+            Resume
           </a>
           <a className={classnames("mobile-menu-items", page.page.page === "projects" && "mobile-menu-items-active")} href="./">
             <span class="mr-2 text-xl">
