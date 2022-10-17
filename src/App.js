@@ -38,8 +38,8 @@ export default function App() {
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
               {/* <Route index element={<About />} /> */}
-              <Route path="./" element={<About />} />
-              <Route path="./resume" element={<Resume />} />
+              <Route exact path="/" element={<About />} />
+              <Route exact path="/resume" element={<Resume />} />
             </Routes>
             <Footer />
           </div>
