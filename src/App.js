@@ -14,8 +14,8 @@ export default function App() {
   const [page, setPage] = useState("");
 
   useEffect(() => {
-    console.log(`${process.env.REACT_APP_API_URL}/`);
-    setPage(process.env.REACT_APP_API_URL + window.location.pathname);
+    
+    setPage(process.env.REACT_APP_SUB_URL + window.location.pathname);
 
     setTimeout(() => {
       setLoader(false);
