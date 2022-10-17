@@ -35,9 +35,8 @@ export default function App() {
           <Navbar page={page} />
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
-              <Route path="/" element={<About />} />
-              <Route index element={<About />} />
-              <Route path="resume" element={<Resume />} />
+              <Route path={process.env.PUBLIC_URL + '/'} element={<About />} />
+              <Route path={process.env.PUBLIC_URL + '/resume'} element={<Resume />} />
             </Routes>
             <Footer />
           </div>
