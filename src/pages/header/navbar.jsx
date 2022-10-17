@@ -28,7 +28,7 @@ export default function Navbar(page) {
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === "/projects" && "menu-active")} href="">
+            <a className={classnames("menu-item", page.page === "/projects" && "menu-active")} href="./">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}

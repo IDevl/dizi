@@ -15,7 +15,7 @@ export default function NavbarMobile(page) {
             </span>{" "}
             About
           </a>
-          <a className={classnames("mobile-menu-items", page.page.page === "/resume" && "mobile-menu-items-active")} href="./">
+          <a className={classnames("mobile-menu-items", page.page.page === "/resume" && "mobile-menu-items-active")} href="./resume">
             <span class="mr-2 text-xl">
               <FontAwesomeIcon icon={faFileLines} />
             </span>{" "}
