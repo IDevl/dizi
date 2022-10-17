@@ -1,9 +1,11 @@
-name: Deploy to GitHub Pages
-    on:
-      push:
-        branches:
-          - master
-    jobs:
+name: CI
+
+on:
+# will run on all PRs that are opened or updated (synchronized)
+pull_request:
+  types: [opened, synchronize, reopened]
+
+jobs:
       build-and-deploy:
         runs-on: ubuntu-latest
         steps:
