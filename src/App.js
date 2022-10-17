@@ -36,8 +36,8 @@ export default function App() {
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
               {/* <Route index element={<About />} /> */}
-              <Route path={`${process.env.REACT_APP_API_URL}/`} element={<About />} />
-              <Route path={`${process.env.REACT_APP_API_URL}/resume`} element={<Resume />} />
+              <Route path={`${process.env.REACT_APP_SUB_URL}/`} element={<About />} />
+              <Route path={`${process.env.REACT_APP_SUB_URL}/resume`} element={<Resume />} />
             </Routes>
             <Footer />
           </div>

@@ -11,7 +11,7 @@ export default function Navbar(page) {
         <ul class="flex gap-3.5">
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_API_URL}/` && "menu-active")} href={`${process.env.REACT_APP_API_URL}/`}>
+            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/` && "menu-active")} href="/">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faUser} />
               </span>{" "}
@@ -20,7 +20,7 @@ export default function Navbar(page) {
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === process.env.REACT_APP_API_URL + "/resume" && "menu-active")} href="/resume">
+            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/resume` && "menu-active")} href="/resume">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faFileLines} />
               </span>{" "}
@@ -29,7 +29,7 @@ export default function Navbar(page) {
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === process.env.REACT_APP_API_URL + "/projects" && "menu-active")} href={"/projects"}>
+            <a className={classnames("menu-item", page.page === `${process.env.REACT_APP_SUB_URL}/projects` && "menu-active")} href="/projects">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}
