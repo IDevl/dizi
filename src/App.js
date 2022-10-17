@@ -6,14 +6,17 @@ import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import { useState, useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
 
   const [page, setPage] = useState("");
-
+  
   useEffect(() => {
+    
+    setPage(window.location.pathname);
+
     setTimeout(() => {
       setLoader(false);
     }, 2000);

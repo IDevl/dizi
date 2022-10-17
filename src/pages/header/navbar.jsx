@@ -10,7 +10,7 @@ export default function Navbar(page) {
         <ul class="flex gap-3.5">
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === "about" && "menu-active")} href="./">
+            <a className={classnames("menu-item", page.page === "/" && "menu-active")} href="./">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faUser} />
               </span>{" "}
@@ -19,7 +19,7 @@ export default function Navbar(page) {
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === "resume" && "menu-active")} href="./resume">
+            <a className={classnames("menu-item", page.page === "/resume" && "menu-active")} href="./resume">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faFileLines} />
               </span>{" "}
@@ -28,7 +28,7 @@ export default function Navbar(page) {
           </li>
           <li>
             {" "}
-            <a className={classnames("menu-item", page.page === "projects" && "menu-active")} href="">
+            <a className={classnames("menu-item", page.page === "/projects" && "menu-active")} href="">
               <span class="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}

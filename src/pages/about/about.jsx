@@ -4,7 +4,6 @@ import { faLaptop, faMobile, faGraduationCap, faBriefcase } from "@fortawesome/f
 import { faUncharted } from "@fortawesome/free-brands-svg-icons";
 import Cube from "./cube/cube";
 
-
 export default function About() {
   return (
     <>
