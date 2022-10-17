@@ -5,6 +5,8 @@ import classnames from "classnames";
 
 export default function Navbar(page) {
 
+  console.log(`${process.env.REACT_APP_SUB_URL}/`);
+
   return (
     <header class="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-[#111111]">
       <nav class="hidden lg:block">
