@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
-import profilepic from "../img/profile/profilepic.jpg";
+import profilepic from "../img/profile-pic.jpg";
 
 export default function Profile() {
   return (

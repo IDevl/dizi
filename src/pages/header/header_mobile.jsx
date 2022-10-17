@@ -3,7 +3,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import NavbarMobile from "./navbar_mobile";
 import { useState } from "react";
 import classnames from "classnames";
-import logo from "../img/logo/logo.png";
+import logo from "../img/logo.png";
 
 export default function HeaderMobile(page) {
   const [menuToggle, setMenuToggle] = useState(false);
