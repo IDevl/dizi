@@ -11,14 +11,7 @@ import { Routes, Route } from "react-router-dom";
 export default function App() {
   const [loader, setLoader] = useState(true);
 
-  const [page, setPage] = useState("");
-
   useEffect(() => {
-    
-    setPage(window.location.pathname);
-
-    console.log(`${process.env.REACT_APP_SUB_URL}/resume`);
-
     setTimeout(() => {
       setLoader(false);
     }, 2000);
@@ -26,19 +19,19 @@ export default function App() {
 
   return (
     <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full">
-      {loader && <Loader />}
+      {/* {loader && <Loader />} */}
 
-      <HeaderMobile page={page} />
+      <HeaderMobile />
       <div class="container grid grid-cols-12 md:gap-10 justify-between">
         <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[220px]">
           <Profile />
         </div>
         <div class="col-span-12 lg:col-span-8 lg:mt-[220px]">
-          <Navbar page={page} />
+          <Navbar />
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
               {/* <Route index element={<About />} /> */}
-              <Route exact path="/" element={<About />} />
+              <Route exact path="/" element={<About />}/>
               <Route exact path="/resume" element={<Resume />} />
             </Routes>
             <Footer />

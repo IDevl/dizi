@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptop, faMobile, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faUncharted } from "@fortawesome/free-brands-svg-icons";
 import Cube from "./cube/cube";
+import { useEffect } from "react";
 
 export default function About() {
   return (
