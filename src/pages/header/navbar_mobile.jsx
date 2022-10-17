@@ -4,24 +4,24 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import classnames from 'classnames';
 
 export default function NavbarMobile(page) {
-  console.log(page)
+
   return (
     <nav id="navbar" class="lg:hidden">
       <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 w-full bg-[#1d1d1d]">
         <li>
-          <a className={classnames("mobile-menu-items", page.page.page === "/" && "mobile-menu-items-active")} href="./">
+          <a className={classnames("mobile-menu-items", page.page.page === process.env.REACT_APP_API_URL + "/" && "mobile-menu-items-active")} href="/">
             <span class="mr-2 text-xl">
               <FontAwesomeIcon icon={faUser} />
             </span>{" "}
             About
           </a>
-          <a className={classnames("mobile-menu-items", page.page.page === "/resume" && "mobile-menu-items-active")} href="./resume">
+          <a className={classnames("mobile-menu-items", page.page.page === process.env.REACT_APP_API_URL + "/resume" && "mobile-menu-items-active")} href="/resume">
             <span class="mr-2 text-xl">
               <FontAwesomeIcon icon={faFileLines} />
             </span>{" "}
             Resume
           </a>
-          <a className={classnames("mobile-menu-items", page.page.page === "/projects" && "mobile-menu-items-active")} href="./">
+          <a className={classnames("mobile-menu-items", page.page.page === process.env.REACT_APP_API_URL + "/projects" && "mobile-menu-items-active")} href="/projects">
             <span class="mr-2 text-xl">
               <FontAwesomeIcon icon={faBriefcase} />
             </span>{" "}

@@ -14,8 +14,8 @@ export default function App() {
   const [page, setPage] = useState("");
 
   useEffect(() => {
-    console.log(window.location.pathname);
-    setPage(window.location.pathname);
+    console.log(`${process.env.REACT_APP_API_URL}/`);
+    setPage(process.env.REACT_APP_API_URL + window.location.pathname);
 
     setTimeout(() => {
       setLoader(false);
@@ -35,8 +35,9 @@ export default function App() {
           <Navbar page={page} />
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
-              <Route path={process.env.PUBLIC_URL + '/'} element={<About />} />
-              <Route path={process.env.PUBLIC_URL + '/resume'} element={<Resume />} />
+              {/* <Route index element={<About />} /> */}
+              <Route path={`${process.env.REACT_APP_API_URL}/`} element={<About />} />
+              <Route path={`${process.env.REACT_APP_API_URL}/resume`} element={<Resume />} />
             </Routes>
             <Footer />
           </div>
