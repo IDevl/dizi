@@ -15,7 +15,9 @@ export default function App() {
 
   useEffect(() => {
     
-    setPage(process.env.REACT_APP_SUB_URL + window.location.pathname);
+    setPage(window.location.pathname);
+
+    console.log(`${process.env.REACT_APP_SUB_URL}/resume`);
 
     setTimeout(() => {
       setLoader(false);
@@ -36,8 +38,8 @@ export default function App() {
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
               {/* <Route index element={<About />} /> */}
-              <Route path={`${process.env.REACT_APP_SUB_URL}/`} element={<About />} />
-              <Route path={`${process.env.REACT_APP_SUB_URL}/resume`} element={<Resume />} />
+              <Route path="/" element={<About />} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
             <Footer />
           </div>
