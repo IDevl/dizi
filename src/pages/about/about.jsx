@@ -2,6 +2,7 @@ import Profile from "./profile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptop, faMobile, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faUncharted } from "@fortawesome/free-brands-svg-icons";
+import Cube from "./cube/cube";
 
 const education = [
   {
@@ -43,7 +44,7 @@ export default function About() {
         </div>
       </div>
 
-      <div class="pb-12 px-2 sm:px-5 md:px-10 lg:px-14">
+      <div class="px-2 sm:px-5 md:px-10 lg:px-14">
         <h3 class="text-[2.2rem] text-white font-semibold pb-5"> What I do! </h3>
         <div class="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
           <div class="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
@@ -69,6 +70,8 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <Cube />
 
       <div class="container py-12 px-2 sm:px-5 md:px-10 lg:px-14 bg-black">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6">
