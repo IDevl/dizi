@@ -6,7 +6,7 @@ import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
@@ -31,12 +31,13 @@ export default function App() {
         <div class="col-span-12 lg:col-span-8 lg:mt-[220px]">
           <Navbar page={page} />
           <div class="lg:rounded-2xl bg-[#111111]">
-            <BrowserRouter>
+            <HashRouter>
               <Routes>
-                <Route path="./" element={<About />} />
-                <Route path="./resume" element={<Resume />} />
+                <Route path="/" element={<About />} />
+                <Route index element={<About />} />
+                <Route path="resume" element={<Resume />} />
               </Routes>
-            </BrowserRouter>
+            </HashRouter>
             <Footer />
           </div>
         </div>
