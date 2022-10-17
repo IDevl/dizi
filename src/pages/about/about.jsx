@@ -62,7 +62,7 @@ export default function About() {
             </div>
           </div>
           <div class="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon class="text-[#ff0000] max-h-[35px]" icon={faUncharted} />
+            <FontAwesomeIcon class="text-[#ffd400] max-h-[35px]" icon={faUncharted} />
             <div class="space-y-2">
               <h3 class="text-white text-[1.25rem] font-semibold"> Software Development </h3>
               <p class="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Lorem Ipsum </p>
