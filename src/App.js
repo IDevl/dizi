@@ -31,7 +31,7 @@ export default function App() {
           <div class="lg:rounded-2xl bg-[#111111]">
             <Routes>
               {/* <Route index element={<About />} /> */}
-              <Route exact path="/" element={<About />}/>
+              <Route exact path="/" element={<About />} />
               <Route exact path="/resume" element={<Resume />} />
             </Routes>
             <Footer />
