@@ -6,16 +6,15 @@ import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import { useState, useEffect } from "react";
-import { HashRouter, Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
 
   const [page, setPage] = useState("");
-  
+
   useEffect(() => {
-    
-    console.log(window.location.pathname)
+    console.log(window.location.pathname);
     setPage(window.location.pathname);
 
     setTimeout(() => {
@@ -35,13 +34,11 @@ export default function App() {
         <div class="col-span-12 lg:col-span-8 lg:mt-[220px]">
           <Navbar page={page} />
           <div class="lg:rounded-2xl bg-[#111111]">
-            <HashRouter>
-              <Routes>
-                <Route path="/" element={<About />} />
-                <Route index element={<About />} />
-                <Route path="resume" element={<Resume />} />
-              </Routes>
-            </HashRouter>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route index element={<About />} />
+              <Route path="resume" element={<Resume />} />
+            </Routes>
             <Footer />
           </div>
         </div>
