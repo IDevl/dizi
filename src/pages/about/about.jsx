@@ -118,7 +118,7 @@ export default function About() {
           <h3 class="text-center text-[2.2rem] text-white font-semibold pb-5"> Clients </h3>
           <Slider className="mt-4" {...settings}>
             {clients.map((client) => (
-              <div class="px-3 md:px-4" key={client.id}>
+              <div class="px-3 md:px-5" key={client.id}>
                 <a href={client.link} target="_blank" rel="noreferrer">
                   <img src={client.src} alt={client.id} />
                 </a>
