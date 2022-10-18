@@ -20,6 +20,36 @@ const experiences = [
     name: "Web Development",
     location: "Exceed Digital Solutions",
   },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
+  {
+    year: "2021-2022",
+    name: "Web Development",
+    location: "Exceed Digital Solutions",
+  },
 ];
 
 export default function Resume() {
