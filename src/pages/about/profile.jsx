@@ -7,7 +7,9 @@ export default function Profile() {
   return (
     <>
       <div class="w-full mb-6 lg:mb-0 mx-auto relative text-center bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
-        <img src={profilepic} class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px] object-cover object-top" alt="Picture_Profile" />
+        <a href='./'>
+          <img src={profilepic} class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px] object-cover object-top" alt="Picture_Profile" />
+        </a>
         <div class="pt-[100px] pb-8">
           <h2 class="mt-6 mb-1 text-[26px] font-semibold text-white"> Jefferson Dela Cruz </h2>
           <h3 class="mb-4 inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]"> Web Developer </h3>
