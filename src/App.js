@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full">
-      {/* {loader && <Loader />} */}
+      {loader && <Loader />}
 
       <HeaderMobile />
       <div class="container grid grid-cols-12 md:gap-10 justify-between">
