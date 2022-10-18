@@ -123,3 +123,9 @@
         width: 10rem;
     }
 }
+
+/* SLICK SLIDER */
+.slick-track {
+    display: flex !important;
+    align-items: center;
+}

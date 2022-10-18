@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
+import { faMobileScreenButton, faDownload } from "@fortawesome/free-solid-svg-icons";
 import profilepic from "../img/profile-pic.jpg";
 
 export default function Profile() {
@@ -35,6 +35,10 @@ export default function Profile() {
             </div>
           </div>
         </div>
+
+        <button class="text-white text-[20px] bg-gradient-to-r from-[#df0000] to-[#550089] px-4 py-2 rounded-xl hover:bg-gradient-to-l mb-8">
+          <FontAwesomeIcon icon={faDownload}/> Download CV
+        </button>
       </div>
     </>
   );

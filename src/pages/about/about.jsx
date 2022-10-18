@@ -3,8 +3,55 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptop, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { faUncharted } from "@fortawesome/free-brands-svg-icons";
 import Cube from "./cube/cube";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+
 
 export default function About() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    cssEase: 'linear',
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+  }
+
+  const clients = [
+    {
+      name: "WrapUp PH",
+      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
+    },
+    {
+      name: "WrapUp PH",
+      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
+    },
+    {
+      name: "WrapUp PH",
+      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
+    },
+    {
+      name: "WrapUp PH",
+      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
+    },
+    {
+      name: "WrapUp PH",
+      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
+    },
+    {
+      name: "WrapUp PH",
+      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
+    },
+  ];
+
+  console.log(settings);
+
   return (
     <>
       <div class="pt-12 py-12 px-2 sm:px-5 md:px-10 lg:px-14">
@@ -51,6 +98,19 @@ export default function About() {
       </div>
 
       <Cube />
+
+      <div class="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
+        <div class="bg-[#0D0D0D] max-w-full h-auto py-10 rounded-xl">
+          <h3 class="text-center text-[2.2rem] text-white font-semibold pb-5"> Clients </h3>
+          <Slider className="mt-4" {...settings}>
+            {clients.map((client) => (
+              <div class="px-5" key={client.id}>
+                <img src={client.src} alt={client.name} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
     </>
   );
 }
