@@ -1,11 +1,12 @@
 import "./cube.scss";
+import Cube from "react-3d-cube";
 
 export default function LogoCube() {
   return (
     <div class="my-[120px] min-h-[150px]">
       <div class="stage-cube-container">
-        <div class="cubespinner">
-          <div class="face1">
+        <Cube className="cubespinner" size={150} index="front">
+          <div class="face1" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="java" class="svg-inline--fa fa-java" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" color="#F0931C">
               <path
                 fill="currentColor"
@@ -13,17 +14,23 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div class="face2">
+          <div class="face2" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="wordpress" class="svg-inline--fa fa-wordpress" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#007095">
-              <path fill="currentColor" d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"></path>
+              <path
+                fill="currentColor"
+                d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"
+              ></path>
             </svg>
           </div>
-          <div class="face3">
+          <div class="face3" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="unity" class="svg-inline--fa fa-unity" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" color="#A9A9A9">
-              <path fill="currentColor" d="M243.583 91.6027L323.695 138.384C326.575 140.026 326.68 144.583 323.695 146.225L228.503 201.854C225.623 203.55 222.22 203.444 219.549 201.854L124.357 146.225C121.425 144.636 121.373 139.973 124.357 138.384L204.417 91.6027V0L0 119.417V358.252L78.3843 312.477V218.914C78.3319 215.576 82.2066 213.192 85.0865 214.993L180.279 270.622C183.159 272.318 184.782 275.338 184.782 278.464V389.669C184.834 393.007 180.959 395.391 178.079 393.589L97.9673 346.808L19.583 392.583L224 512L428.417 392.583L350.033 346.808L269.921 393.589C267.093 395.338 263.114 393.06 263.218 389.669V278.464C263.218 275.126 265.051 272.159 267.721 270.622L362.914 214.993C365.741 213.245 369.72 215.47 369.616 218.914V312.477L448 358.252V119.417L243.583 0V91.6027Z"></path>
+              <path
+                fill="currentColor"
+                d="M243.583 91.6027L323.695 138.384C326.575 140.026 326.68 144.583 323.695 146.225L228.503 201.854C225.623 203.55 222.22 203.444 219.549 201.854L124.357 146.225C121.425 144.636 121.373 139.973 124.357 138.384L204.417 91.6027V0L0 119.417V358.252L78.3843 312.477V218.914C78.3319 215.576 82.2066 213.192 85.0865 214.993L180.279 270.622C183.159 272.318 184.782 275.338 184.782 278.464V389.669C184.834 393.007 180.959 395.391 178.079 393.589L97.9673 346.808L19.583 392.583L224 512L428.417 392.583L350.033 346.808L269.921 393.589C267.093 395.338 263.114 393.06 263.218 389.669V278.464C263.218 275.126 265.051 272.159 267.721 270.622L362.914 214.993C365.741 213.245 369.72 215.47 369.616 218.914V312.477L448 358.252V119.417L243.583 0V91.6027Z"
+              ></path>
             </svg>
           </div>
-          <div class="face4">
+          <div class="face4" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="react" class="svg-inline--fa fa-react" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#43CEF3">
               <path
                 fill="currentColor"
@@ -31,7 +38,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div class="face5">
+          <div class="face5" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-js" class="svg-inline--fa fa-square-js" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" color="#F7D33C">
               <path
                 fill="currentColor"
@@ -39,7 +46,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div class="face6">
+          <div class="face6" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" color="#FFFFFF">
               <path
                 fill="currentColor"
@@ -47,7 +54,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-        </div>
+        </Cube>
       </div>
     </div>
   );
