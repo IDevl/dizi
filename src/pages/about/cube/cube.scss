@@ -17,9 +17,9 @@
         width: 150px;
         height: 150px;
         border: 1px solid rgb(255, 255, 255);
-        background: rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0.025);
         text-align: center;
-        font-size: 75px;
+        font-size: 85px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,11 +92,11 @@
 
     from,
     to {
-        color: #df0000;
+        filter: saturate(0);
     }
 
     83% {
-        color: #550089;
+        filter: saturate(2);
     }
 
 }
