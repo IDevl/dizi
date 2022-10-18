@@ -36,7 +36,7 @@ export default function Profile() {
           </div>
         </div>
 
-        <button class="text-white text-[20px] bg-gradient-to-r from-[#df0000] to-[#550089] px-4 py-2 rounded-xl hover:bg-gradient-to-l mb-8">
+        <button class="text-white text-[18px] bg-gradient-to-r from-[#df0000] to-[#550089] px-5 py-3 rounded-xl hover:bg-gradient-to-l mb-8">
           <FontAwesomeIcon icon={faDownload}/> Download CV
         </button>
       </div>

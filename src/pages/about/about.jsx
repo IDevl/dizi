@@ -7,62 +7,59 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-
-
 export default function About() {
   const settings = {
     dots: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
-        }
+          slidesToScroll: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }
-    ]
-  
-  }
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
 
   const clients = [
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
     },
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
     },
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
     },
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
     },
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
     },
     {
-      name: "WrapUp PH",
+      link: "/",
       src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
     },
   ];
@@ -121,8 +118,10 @@ export default function About() {
           <h3 class="text-center text-[2.2rem] text-white font-semibold pb-5"> Clients </h3>
           <Slider className="mt-4" {...settings}>
             {clients.map((client) => (
-              <div class="px-5" key={client.id}>
-                <img src={client.src} alt={client.name} />
+              <div class="px-3 md:px-4" key={client.id}>
+                <a href={client.link} target="_blank" rel="noreferrer">
+                  <img src={client.src} alt={client.id} />
+                </a>
               </div>
             ))}
           </Slider>

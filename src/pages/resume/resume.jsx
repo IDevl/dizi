@@ -25,8 +25,9 @@ const experiences = [
 export default function Resume() {
   return (
     <>
-      <div class="container py-12 px-2 sm:px-5 md:px-10 lg:px-14 bg-black">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6">
+      <div class="container py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+        <h2 class="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">Resume</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-10">
           <div>
             <div class="flex items-center space-x-3 mb-5">
               <FontAwesomeIcon class="text-[#df0000] max-h-[30px]" icon={faGraduationCap} />
@@ -57,7 +58,7 @@ export default function Resume() {
         </div>
       </div>
 
-      <div class="container bg-[#0D0D0D] py-12 px-2 sm:px-5 md:px-10 lg:px-20">
+      <div class="container bg-black py-12 px-2 sm:px-5 md:px-10 lg:px-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="col-span-1">
             <h4 class="text-[1.6rem] text-white font-medium mb-6"> Working Skills </h4>
