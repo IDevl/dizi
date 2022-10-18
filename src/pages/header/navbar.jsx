@@ -9,9 +9,7 @@ export default function Navbar() {
   const location = useLocation();
 
   const refreshPage = () => {
-    setTimeout(() => {
-      navigate(0);
-    }, 10);
+    navigate(0);
   };
   return (
     <header class="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-[#111111]">

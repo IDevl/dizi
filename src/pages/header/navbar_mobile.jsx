@@ -10,9 +10,7 @@ export default function NavbarMobile() {
   const location = useLocation();
 
   const refreshPage = () => {
-    setTimeout(() => {
-      navigate(0);
-    }, 10);
+    navigate(0);
   };
 
   return (
