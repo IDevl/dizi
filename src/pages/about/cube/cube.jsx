@@ -5,7 +5,7 @@ export default function LogoCube() {
   return (
     <div class="my-[120px] min-h-[150px]">
       <div class="stage-cube-container">
-        <Cube className="cubespinner" size={150} index="front">
+        <Cube className="cubespinner" size={150}>
           <div class="face1" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="java" class="svg-inline--fa fa-java" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" color="#F0931C">
               <path

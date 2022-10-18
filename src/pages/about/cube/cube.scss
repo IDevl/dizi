@@ -18,6 +18,31 @@
     align-items: center;
 }
 
+@media screen and (min-width: 979px) {
+    ._cube_bssuh_1 {
+        animation-name: spincubeFast;
+        animation-timing-function: ease-in-out;
+        animation-duration: 9s;
+        pointer-events: all;
+    }
+}
+
+@keyframes spincubeFast {
+
+    from,
+    to {
+        transform: translate3d(0px, 0px, -75px) rotateX(0) rotateY(0) rotateZ(0);
+        pointer-events: none;
+    }
+
+    
+    83% {
+        transform: translate3d(0px, 0px, -75px) rotateX(220deg) rotateY(315deg) rotateZ(0deg);
+    }
+}
+
+
+
 @media screen and (max-width: 979px) {
     ._cube_bssuh_1 {
         animation-name: spincube;
@@ -27,7 +52,6 @@
         pointer-events: none;
     }
 }
-
 
 @keyframes spincube {
 
@@ -55,5 +79,4 @@
     83% {
         transform: rotateX(90deg);
     }
-
 }
