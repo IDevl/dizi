@@ -77,8 +77,7 @@ export default function About() {
         <div class="lg:grid grid-cols-12 md:gap-10 pt-4 pt-[30px] items-center">
           <div class="col-span-12 space-y-2.5">
             <div class="mr-0 text-[0.9rem]">
-              <p class="text-[#b3b3b3] leading-7"> I am a BS Information Technology graduate from the Polytechnic University of the Philippines and a Web Developer at Exceed Digital Solutions. </p>
-              <p class="text-[#b3b3b3] leading-7 mt-2.5"> I am an enthusiast in application and software development and has the perseverance to expand his knowledge and skills through creating real-world projects. I also have an aspiration to attain more comprehensive experiences in the field of Information Technology. </p>
+              <p class="text-[#b3b3b3] leading-7"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
             </div>
           </div>
         </div>
