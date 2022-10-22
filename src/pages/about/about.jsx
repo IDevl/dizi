@@ -75,9 +75,7 @@ export default function About() {
         <h2 className="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">About Me</h2>
         <div className="lg:grid grid-cols-12 md:gap-10 pt-4 pt-[30px] items-center">
           <div className="col-span-12 space-y-2.5">
-            <div className="mr-0 text-[0.9rem]">
-              <p className="text-[#b3b3b3] leading-7"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
-            </div>
+            <p className="text-[#b3b3b3] leading-8 text-[1rem]"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
           </div>
         </div>
       </div>
@@ -85,22 +83,22 @@ export default function About() {
       <div className="px-2 sm:px-5 md:px-10">
         <h3 className="text-[2.2rem] text-white font-semibold pb-5"> What I do! </h3>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-          <div className="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon className="text-[#00c4ff] max-h-[150px]" icon={faLaptop} />
+          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#383838] bg-transparent">
+            <FontAwesomeIcon className="text-[#00c4ff] text-[30px]" icon={faLaptop} />
             <div className="space-y-2">
               <h3 className="text-white text-[1.25rem] font-semibold"> Web Development </h3>
               <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Integrate, modify, and develop responsive ecommerce and company websites with WordPress and Shopify. </p>
             </div>
           </div>
-          <div className="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon className="text-[#AF54D2] max-h-[150px]" icon={faMobile} />
+          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#383838] bg-transparent">
+            <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faMobile} />
             <div className="space-y-2">
               <h3 className="text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
               <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Knowledge of implementing user interfaces of mobile applications, primarily Flutter and React Native frameworks. </p>
             </div>
           </div>
-          <div className="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
-            <FontAwesomeIcon className="text-[#ffd400] max-h-[200px]" icon={faUncharted} />
+          <div className="flex items-start gap-4 p-4 rounded-xl border-[1px] border-[#383838] bg-transparent">
+            <FontAwesomeIcon className="text-[#ffd400] text-[35px]" icon={faUncharted} />
             <div className="space-y-2">
               <h3 className="text-white text-[1.25rem] font-semibold"> Game Development </h3>
               <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]">
