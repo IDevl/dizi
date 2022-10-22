@@ -9,13 +9,13 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <header class="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-[#111111]">
-      <nav class="hidden lg:block">
-        <ul class="flex gap-3.5">
+    <header className="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-[#111111]">
+      <nav className="hidden lg:block">
+        <ul className="flex gap-3.5">
           <li>
             {" "}
             <Link className={classnames("menu-item", location.pathname === "/" && "menu-active")} to="./">
-              <span class="text-xl mb-1">
+              <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faUser} />
               </span>{" "}
               About{" "}
@@ -24,7 +24,7 @@ export default function Navbar() {
           <li>
             {" "}
             <Link className={classnames("menu-item", location.pathname === "/resume" && "menu-active")} to="./resume">
-              <span class="text-xl mb-1">
+              <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faFileLines} />
               </span>{" "}
               Resume{" "}
@@ -33,7 +33,7 @@ export default function Navbar() {
           <li>
             {" "}
             <Link className={classnames("menu-item", location.pathname === "/projects" && "menu-active")} to="./projects">
-              <span class="text-xl mb-1">
+              <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}
               Projects{" "}

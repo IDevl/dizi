@@ -11,7 +11,7 @@ export default function Loader() {
 
   return (
     <div id="preloader" className={preloaded ? "preloaded" : ""}>
-      <div class="loader_line"></div>
+      <div className="loader_line"></div>
     </div>
   );
 }

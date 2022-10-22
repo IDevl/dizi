@@ -18,15 +18,15 @@ export default function App() {
   }, []);
 
   return (
-    <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] sm:mb-[120px] lg:mb-0">
+    <div className="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] sm:mb-[120px] lg:mb-0">
       {/* {loader && <Loader />} */}
-      <div class="container grid grid-cols-12 md:gap-10 justify-between">
-        <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[220px]">
+      <div className="container grid grid-cols-12 md:gap-10 justify-between">
+        <div className="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[220px]">
           <Profile />
         </div>
-        <div class="col-span-12 lg:col-span-8 lg:mt-[220px]">
+        <div className="col-span-12 lg:col-span-8 lg:mt-[220px]">
           <Navbar />
-          <div class="lg:rounded-2xl bg-[#111111] overflow-hidden">
+          <div className="lg:rounded-2xl bg-[#111111] overflow-hidden">
             <Routes>
               <Route exact path="/" element={<About />} />
               <Route exact path="/resume" element={<Resume />} />

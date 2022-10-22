@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: brightness(1.5);
+    filter: contrast(1.6) brightness(3);
 }
 
 @media screen and (min-width: 1024px) {
