@@ -1,0 +1,18 @@
+[
+  {
+    "image": "https://idevl.github.io/DCWebsite/img/projects/gosukid.png",
+    "title": "Gosu Kid",
+    "category": "Game Development",
+    "description": "Gosu Kid is an educational android mobile game application that will help the Grade Three students to improve their skills and motivation in learning.",
+    "link": "https://idevl.github.io/GosuKidWebsite/",
+    "skills": ["PUP", "Unity", "C#", "Firebase", "Photoshop", "Leantween"]
+  },
+  {
+    "image": "https://idevl.github.io/DCWebsite/img/projects/fiestaextravaganza.png",
+    "title": "Gosu Kid",
+    "category": "Game Development",
+    "description": "Gosu Kid is an educational android mobile game application that will help the Grade Three students to improve their skills and motivation in learning.",
+    "link": "https://idevl.github.io/GosuKidWebsite/",
+    "skills": ["PUP", "Unity", "C#", "Firebase", "Photoshop", "Leantween"]
+  }
+]

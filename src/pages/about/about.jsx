@@ -67,7 +67,7 @@ export default function About() {
 
   return (
     <>
-      <div className="pt-12 py-12 px-2 sm:px-5 md:px-10">
+      <div className="pt-12 py-10 px-2 sm:px-5 md:px-10">
         <div className="lg:hidden">
           <Profile />
         </div>

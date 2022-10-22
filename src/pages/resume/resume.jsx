@@ -79,13 +79,13 @@ const knowledges = ["WordPress", "Shopify", "InMotion", "HTML", "CSS", "Javascri
 export default function Resume() {
   return (
     <>
-      <div className="container py-12 px-2 sm:px-5 md:px-10">
+      <div className="container py-10 px-2 sm:px-5 md:px-10">
         <h2 className="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">Resume</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div>
             <div className="flex items-center space-x-3 mb-5">
               <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faGraduationCap} />
-              <h4 className="text-[1.6rem] text-white font-medium"> Education </h4>
+              <h4 className="text-[1.6rem] text-white font-[500]"> Education </h4>
             </div>
             {education.map((education) => (
               <div className="mt-5 bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg border-[#383838] border-[1px]">
@@ -102,7 +102,7 @@ export default function Resume() {
           <div>
             <div className="flex items-center space-x-3 mb-5">
               <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faBriefcase} />
-              <h4 className="text-[1.6rem] text-white font-medium"> Experience </h4>
+              <h4 className="text-[1.6rem] text-white font-[500]"> Experience </h4>
             </div>
             {experiences.map((experiences) => (
               <div className="mt-5 bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg border-[#383838] border-[1px]">
@@ -121,7 +121,7 @@ export default function Resume() {
       <div className="container bg-black py-12 px-2 sm:px-5 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="col-span-1">
-            <h4 className="text-[1.6rem] text-white font-medium mb-8"> Working Skills </h4>
+            <h4 className="text-[1.6rem] text-white font-[500] mb-8"> Working Skills </h4>
 
             {skills.map((skills) => (
               <div className="mb-5">
@@ -137,7 +137,7 @@ export default function Resume() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-[1.6rem] text-white font-medium mb-8"> Knowledges </h4>
+            <h4 className="text-[1.6rem] text-white font-[500] mb-8"> Knowledges </h4>
             <div className="flex gap-2.5 flex-wrap">
               {knowledges.map((knowledges) => (
                 <button className="bg-[#1C1C1C] hover:bg-[#9d00ff] text-[#b7b7b7] text-[0.9rem] font-[500] hover:text-white px-3 py-2 rounded-lg duration-500">{knowledges}</button>

@@ -5,6 +5,7 @@ import Footer from "./pages/footer/footer";
 import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
+import Projects from "./pages/projects/projects.jsx";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -30,6 +31,7 @@ export default function App() {
             <Routes>
               <Route exact path="/" element={<About />} />
               <Route exact path="/resume" element={<Resume />} />
+              <Route exact path="/projects" element={<Projects />} />
             </Routes>
             <Footer />
           </div>
