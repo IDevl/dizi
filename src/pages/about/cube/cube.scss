@@ -19,7 +19,7 @@
     filter: brightness(1.5);
 }
 
-@media screen and (min-width: 979px) {
+@media screen and (min-width: 1024px) {
     ._cube_bssuh_1 {
         animation-name: spincubeFast;
         animation-timing-function: ease-in-out;
@@ -44,7 +44,7 @@
 
 
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 1024px) {
     ._cube_bssuh_1 {
         animation-name: spincube;
         animation-timing-function: ease-in-out;

@@ -18,9 +18,8 @@ export default function App() {
   }, []);
 
   return (
-    <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full">
+    <div class="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] sm:mb-[120px] lg:mb-0">
       {/* {loader && <Loader />} */}
-      <HeaderMobile />
       <div class="container grid grid-cols-12 md:gap-10 justify-between">
         <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[220px]">
           <Profile />
@@ -36,6 +35,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <HeaderMobile />
     </div>
   );
 }

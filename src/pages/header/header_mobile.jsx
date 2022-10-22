@@ -1,26 +1,34 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import NavbarMobile from "./navbar_mobile";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import classnames from "classnames";
+import { Link, useLocation } from "react-router-dom";
 
-export default function HeaderMobile(page) {
-  const [menuToggle, setMenuToggle] = useState(false);
+export default function HeaderMobile() {
+  const location = useLocation();
 
   return (
-    <div class="sticky top-0 z-[9999] block lg:hidden">
-      <div class="w-full flex items-center justify-between px-4 py-5 bg-black">
-        <a class="rounded-lg bg-gradient-to-r from-[#df0000] to-[#550089] py-[1.5px] px-[13px] font-bold text-white text-[1.4rem] tracking-[.05em]" href="./">
-          DC
-        </a>
-        <div class="flex items-center">
-          <button onClick={() => setMenuToggle((current) => !current)} className={classnames("menu-toggle-btn", menuToggle && "menu-toggle-btn-active")}>
-            <FontAwesomeIcon icon={faBars} id="burger-open" className={menuToggle ? "hidden" : ""} />
-            <FontAwesomeIcon icon={faXmark} id="burger-close" className={!menuToggle ? "hidden" : ""} />
-          </button>
-        </div>
+    <div class="fixed bottom-0 left-0 right-0 z-[9999] block lg:hidden">
+      <div class="w-full flex items-center justify-center gap-[1.2em] px-4 py-5 bg-black">
+        <Link className={classnames("menu-item", location.pathname === "/" && "menu-active")} to="./">
+          <span class="text-md mb-1">
+            <FontAwesomeIcon icon={faBriefcase} />
+          </span>{" "}
+          About{" "}
+        </Link>
+        <Link className={classnames("menu-item", location.pathname === "/resume" && "menu-active")} to="./resume">
+          <span class="text-md mb-1">
+            <FontAwesomeIcon icon={faBriefcase} />
+          </span>{" "}
+          Resume{" "}
+        </Link>
+        <Link className={classnames("menu-item", location.pathname === "/projects" && "menu-active")} to="./projects">
+          <span class="text-md mb-1">
+            <FontAwesomeIcon icon={faBriefcase} />
+          </span>{" "}
+          Projects{" "}
+        </Link>
       </div>
-      {menuToggle && <NavbarMobile page={page} />}
     </div>
   );
 }
