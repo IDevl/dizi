@@ -84,7 +84,7 @@ export default function About() {
 
       <div className="px-2 sm:px-5 md:px-10">
         <h3 className="text-[2.2rem] text-white font-semibold pb-5"> What I do! </h3>
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
           <div className="flex items-start gap-4 p-6 rounded-xl border-[1px] border-[#383838] bg-transparent">
             <FontAwesomeIcon className="text-[#00c4ff] max-h-[150px]" icon={faLaptop} />
             <div className="space-y-2">
