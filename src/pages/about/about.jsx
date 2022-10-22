@@ -17,6 +17,7 @@ export default function About() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    centerMode: true,
     arrows: false,
     pauseOnHover: false,
     responsive: [
@@ -30,8 +31,8 @@ export default function About() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -118,7 +119,7 @@ export default function About() {
           <Slider className="mt-4" {...settings}>
             {clients.map((client) => (
               <div class="px-3 md:px-5" key={client.id}>
-                <a href={client.link} target="_blank" rel="noreferrer">
+                <a class="flex items-center justify-center" href={client.link} target="_blank" rel="noreferrer">
                   <img src={client.src} alt={client.id} />
                 </a>
               </div>
