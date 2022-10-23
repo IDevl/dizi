@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import projects from "./projects.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmarkCircle, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faXmarkCircle, faFileLines, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
 import { motion } from "framer-motion";
 
@@ -71,17 +71,30 @@ export default function Projects() {
                     </p>
                   </div>
                 </div>
-                <p className="text-white text-[1rem] mt-5 leading-[1.8]"> {project.description} </p>
 
-                <div className="flex gap-2.5 flex-wrap mt-4">
+                <p className="text-white text-[1rem] mt-5 leading-[2]"> {project.description} </p>
+
+                <div className="flex gap-2.5 items-center mt-6">
+                  <FontAwesomeIcon className="text-white text-[1.4rem]" icon={faMagnifyingGlass} />
+                  <p className="text-white text-[1rem] font-[400]">
+                    <span className="font-[600]">Knowledges </span>
+                  </p>
+                </div>
+                <div className="flex gap-2.5 flex-wrap mt-4 mb-10">
                   {project.skills.map((skills) => (
-                    <button className="bg-[#1C1C1C] hover:bg-[#9d00ff] text-[0.9rem] font-[500] text-white px-4 py-1.5 rounded-2xl duration-500 drop-shadow-md">{skills}</button>
+                    <button className="border-[1px] border-[#bdbdbd] hover:border-[#9d00ff] hover:bg-[#9d00ff] text-[0.9rem] font-[500] text-white px-4 py-1.5 rounded-2xl duration-500 drop-shadow-md">{skills}</button>
                   ))}
                 </div>
 
-                <a className="mt-10 overflow-hidden rounded-[20px] flex my-[1em]" href={project.link} target="_blank" rel="noreferrer">
-                  <img className="w-100 rounded-[20px] hover:scale-[1.4] duration-[4s]" src={process.env.PUBLIC_URL + project.image} alt={project.title} />
-                </a>
+                <div className="my-10 overflow-hidden rounded-[20px] flex">
+                  <img className="w-100 rounded-[20px] hover:scale-[1.4] duration-[6s]" src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                </div>
+                <div className="mb-8 flex items-center justify-center w-100">
+                  <a className="bg-[#1C1C1C] hover:bg-[#9d00ff] text-[1.2rem] font-[500] text-white px-6 py-2 duration-500 drop-shadow-md" href={project.link} target="_blank" rel="noreferrer">
+                    {" "}
+                    Preview{" "}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
