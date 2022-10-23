@@ -47,7 +47,7 @@ export default function Projects() {
           {projects
             .filter((projects) => projects.category.includes(category))
             .map((projects) => (
-              <motion.div transition={{ duration: 1 }} animate={{ opacity: 1, scale: 1 }} initial={{ opacity: 0, scale: 0 }} exit={{ opacity: 0, scale: 0 }} className="rounded-lg p-6 border-[2px] border-[#212425]">
+              <motion.div transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="rounded-lg p-6 border-[2px] border-[#212425]">
                 <div className="overflow-hidden rounded-lg" onClick={() => setProject(projects)}>
                   <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 rounded-lg h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
                 </div>

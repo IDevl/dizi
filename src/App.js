@@ -7,19 +7,24 @@ import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects.jsx";
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
 
+  const location = useLocation();
+
   useEffect(() => {
+    setLoader(true);
+    window.scrollTo({ top: 0 });
+    document.body.style.overflow = "hidden";
     setTimeout(() => {
+      document.body.style.overflow = "auto";
       setLoader(false);
     }, 2000);
-  }, []);
+  }, [location]);
 
   return (
-    
     <div className="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
       {loader && <Loader />}
       <div className="container grid grid-cols-12 md:gap-10 justify-between">
@@ -38,6 +43,7 @@ export default function App() {
           </div>
         </div>
       </div>
+
       <HeaderMobile />
     </div>
   );

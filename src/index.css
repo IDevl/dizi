@@ -155,10 +155,7 @@
 .slick-slide img {
     filter: contrast(2);
     transition: 400ms;
-}
-
-.slick-slide img:hover {
-    transform: scale(1.2);
+    max-height: 120px;
 }
 
 /* SCROLL BAR */

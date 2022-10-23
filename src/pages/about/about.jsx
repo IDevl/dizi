@@ -16,8 +16,8 @@ export default function About() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    speed: 500,
-    slidesToShow: 4,
+    speed: 400,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     arrows: false,
@@ -33,6 +33,7 @@ export default function About() {
       {
         breakpoint: 480,
         settings: {
+          fade: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
