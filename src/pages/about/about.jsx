@@ -98,8 +98,8 @@ export default function About() {
       <Cube />
       
       <div className="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
-        <div className="bg-[#0D0D0D] max-w-full h-auto pt-10 rounded-xl overflow-hidden">
-          <h3 className="text-center text-[2.2rem] text-white font-semibold pb-5"> Clients </h3>
+        <div className="bg-[#0D0D0D] max-w-full h-auto pt-8 rounded-xl overflow-hidden">
+          <h3 className="text-center text-[2.2rem] text-white font-semibold pb-3"> Clients </h3>
           <Slider className="mt-4" {...settings}>
             {clients.map((client) => (
               <div className="px-3 md:px-5" key={client.id}>
