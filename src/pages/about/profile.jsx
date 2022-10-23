@@ -78,9 +78,11 @@ export default function Profile() {
           </div>
         </div>
 
-        <button className="text-white text-[18px] bg-gradient-to-l from-[#df0000] to-[#550089] px-5 py-3 rounded-xl bg-[length:100%_100%] hover:bg-[length:300%_100%] duration-[0.4s] mb-8">
-          <FontAwesomeIcon icon={faDownload} /> Download CV
-        </button>
+        <div className="w-100 flex justify-center pb-8">
+          <a href="https://drive.google.com/file/d/1vVdvDbu4gEVzSIj7LsGw_G7dLuy6Nu1H/view?usp=sharing" target="_blank" rel="noreferrer" download className="text-white text-[18px] bg-gradient-to-l from-[#df0000] to-[#550089] px-5 py-3 rounded-xl bg-[length:100%_100%] hover:bg-[length:300%_100%] duration-[0.4s]">
+            <FontAwesomeIcon icon={faDownload} /> Download CV
+          </a>
+        </div>
       </div>
     </>
   );
