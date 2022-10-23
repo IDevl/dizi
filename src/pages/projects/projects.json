@@ -1,6 +1,6 @@
 [
   {
-    "image": "/projects/gosukid.png",
+    "image": "/img/projects/gosukid.png",
     "title": "Gosu Kid",
     "category": "Game Development",
     "description": "Gosu Kid is an educational android mobile game application that will help the Grade Three students to improve their skills and motivation in learning.",
@@ -8,7 +8,7 @@
     "skills": ["PUP", "Unity", "C#", "Firebase", "Photoshop", "Leantween"]
   },
   {
-    "image": "/projects/fiestaextravaganza.png",
+    "image": "/img/projects/fiestaextravaganza.png",
     "title": "Fiesta Extravaganza",
     "category": "Web Development",
     "description": "Fiesta Extravaganza is a celebration of Filipino Heritage and Culture in Ontario and across Canada that promotes multicultural appreciation of Philippine heritage.",
