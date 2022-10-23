@@ -144,7 +144,7 @@
 
 /* SLICK SLIDER */
 .slick-slider {
-    background: linear-gradient(to left, rgb(131, 131, 131), transparent);
+    background: linear-gradient(45deg, rgb(131, 131, 131), transparent);
 }
 
 .slick-track {
