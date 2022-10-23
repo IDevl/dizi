@@ -159,18 +159,17 @@
 }
 
 /* SCROLL BAR */
-body::-webkit-scrollbar,
-.modal::-webkit-scrollbar {
-    width: 0.75em;
+body::-webkit-scrollbar {
+    width: 0em;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(37, 37, 37);
-    border-radius: 50px;
+.modal::-webkit-scrollbar {
+    width: 0.6em;
 }
+
 
 .modal::-webkit-scrollbar-thumb  {
     padding-top: 1em;
-    background-color: rgba(255, 255, 255, 0.616);
+    background: white;
     border-radius: 50px;
 }

@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    ._cube_bssuh_1 {
+    .square-animation {
         animation-name: spincubeFast;
         animation-timing-function: ease-in-out;
         animation-duration: 3s;
@@ -29,7 +29,6 @@
 }
 
 @keyframes spincubeFast {
-
     from,
     to {
         transform: translate3d(0px, 0px, -75px) rotateX(0) rotateY(0) rotateZ(0);
