@@ -143,10 +143,13 @@
 }
 
 /* SLICK SLIDER */
+.slick-slider {
+    background: linear-gradient(to left, rgb(131, 131, 131), transparent);
+}
+
 .slick-track {
     display: flex !important;
     align-items: center;
-    padding-top: 1em;
 }
 
 /* SCROLL BAR */
