@@ -144,7 +144,7 @@
 
 /* SLICK SLIDER */
 .slick-slider {
-    background: linear-gradient(45deg, rgb(131, 131, 131), transparent);
+    background: linear-gradient(to left, #ff000081, #9d00ff7c);
 }
 
 .slick-track {
@@ -152,19 +152,23 @@
     align-items: center;
 }
 
+.slick-slide img {
+    filter: brightness(1.2) contrast(1.2);
+}
+
 /* SCROLL BAR */
 body::-webkit-scrollbar,
 .modal::-webkit-scrollbar {
-    width: 1em;
+    width: 0.75em;
 }
 
-body::-webkit-scrollbar-track,
-.modal::-webkit-scrollbar-track  {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(37, 37, 37);
+    border-radius: 50px;
 }
 
-body::-webkit-scrollbar-thumb,
 .modal::-webkit-scrollbar-thumb  {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    padding-top: 1em;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 50px;
 }
