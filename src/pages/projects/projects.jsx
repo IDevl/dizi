@@ -63,7 +63,7 @@ export default function Projects() {
               <FontAwesomeIcon className="absolute top-[-2.4rem] right-[0rem] lg:top-[-4rem] text-white text-[2rem] lg:text-[3rem] duration-[800ms] hover:opacity-[0.4] cursor-pointer" icon={faXmarkCircle} onClick={() => setProject(null)} />
               <div className="modal p-3 sm:p-5 max-w-[800px] max-h-[600px] overflow-y-scroll">
                 <h2 className="text-[2rem] font-[800] text-center links brightness-[1.2] leading-[1.2]">{project.title}</h2>
-                <div className="gap-8 mt-6">
+                <div className="gap-8 mt-7">
                   <div className="flex gap-2.5 items-center">
                     <FontAwesomeIcon className="text-white text-[1.4rem]" icon={faFileLines} />
                     <p className="text-white text-[1rem] font-[400]">
@@ -89,7 +89,7 @@ export default function Projects() {
                 <div className="my-10 overflow-hidden rounded-[20px] flex">
                   <img className="w-100 rounded-[20px] hover:scale-[1.4] duration-[6s]" src={process.env.PUBLIC_URL + project.image} alt={project.title} />
                 </div>
-                <div className="mb-8 flex items-center justify-center w-100">
+                <div className="mb-6 flex items-center justify-center w-100">
                   <a className="bg-[#1C1C1C] hover:bg-[#9d00ff] text-[1.2rem] font-[500] text-white px-6 py-2 duration-500 drop-shadow-md" href={project.link} target="_blank" rel="noreferrer">
                     {" "}
                     Preview{" "}
