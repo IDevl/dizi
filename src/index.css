@@ -24,16 +24,16 @@
     }
 
     .links {
-        background: -webkit-linear-gradient(right, #ff0000, #9e00ff);
+        background: -webkit-linear-gradient(left, #ff0000, #9e00ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-size: 300% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         transition: 400ms;
     }
 
     .links:hover {
-        background-size: 100% 100%;
+        background-size: 300% 100%;
     }
 
     .socialbtn {

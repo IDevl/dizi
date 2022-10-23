@@ -6,6 +6,8 @@ import Cube from "./cube/cube";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useEffect } from "react";
+import clients from './clients.json'
 
 export default function About() {
   const settings = {
@@ -38,32 +40,9 @@ export default function About() {
     ],
   };
 
-  const clients = [
-    {
-      link: "/",
-      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
-    },
-    {
-      link: "/",
-      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
-    },
-    {
-      link: "/",
-      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
-    },
-    {
-      link: "/",
-      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
-    },
-    {
-      link: "/",
-      src: "https://staging.wrapup.ph/wp-content/uploads/2022/10/Wrap-Up-Logo.png",
-    },
-    {
-      link: "/",
-      src: "https://fiestaextravaganza.com/wp-content/uploads/2022/10/VFE-2022-logo-1.png",
-    },
-  ];
+  useEffect(() => {
+    document.title = 'About | Jefferson Dela Cruz';
+  }, []);
 
   return (
     <>
@@ -117,7 +96,7 @@ export default function About() {
       </div>
 
       <Cube />
-
+      
       <div className="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
         <div className="bg-[#0D0D0D] max-w-full h-auto py-10 rounded-xl">
           <h3 className="text-center text-[2.2rem] text-white font-semibold pb-5"> Clients </h3>

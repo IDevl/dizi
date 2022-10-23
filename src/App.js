@@ -19,6 +19,7 @@ export default function App() {
   }, []);
 
   return (
+    
     <div className="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
       {/* {loader && <Loader />} */}
       <div className="container grid grid-cols-12 md:gap-10 justify-between">

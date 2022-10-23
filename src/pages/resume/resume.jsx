@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const education = [
   {
@@ -77,6 +78,9 @@ const skills = [
 const knowledges = ["WordPress", "Shopify", "InMotion", "HTML", "CSS", "Javascript", "PHP", "ReactJS", "NodeJS", "MongoDB", "Unity 2D", "C#", "Firebase", "Git", "Java", "C++", "Python", "mySQL", "MS Office", "Asana"];
 
 export default function Resume() {
+  useEffect(() => {
+    document.title = 'Resume | Jefferson Dela Cruz';
+  }, []);
   return (
     <>
       <div className="container py-10 px-2 sm:px-5 md:px-10">
