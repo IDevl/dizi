@@ -26,9 +26,10 @@ export default function Projects() {
       <div className="container py-10 px-2 sm:px-5 md:px-10">
         <h2 className="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">Projects</h2>
         <ul className="mt-8 flex w-full justify-start md:justify-end flex-wrap font-[500] text-white text-[1rem]">
-          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Dev" && "text-[#bf58ff]")}  onClick={()=>setCategory("Dev")}> All </li>
-          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Web Dev" && "text-[#bf58ff]")} onClick={()=>setCategory("Web Dev")}> Web Dev </li>
-          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Game Dev" && "text-[#bf58ff]")} onClick={()=>setCategory("Game Dev")}> Game Dev </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Dev" && "text-[#bf58ff]")} onClick={() => setCategory("Dev")}> All </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Game Dev" && "text-[#bf58ff]")} onClick={()=>setCategory("Game Dev")}> Game </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Website Dev" && "text-[#bf58ff]")} onClick={() => setCategory("Website Dev")}> Website </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Web Application Dev" && "text-[#bf58ff]")} onClick={()=>setCategory("Web Application Dev")}> Web Application </li>
         </ul>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {projects.filter((projects) => projects.category.includes(category)).map((projects) => (
