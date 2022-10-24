@@ -13,7 +13,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
-  const [loader, setLoader] = useState(true);
+
+  const [loader, setLoader] = useState(null);
 
   const location = useLocation();
 
@@ -25,24 +26,22 @@ export default function App() {
     document.body.style.overflow = "hidden";
 
     setTimeout(() => {
-      window.scrollTo({ top: 0 });
-    }, 1000);
-
-    setTimeout(() => {
       document.body.style.overflow = "auto";
       setLoader(false);
     }, 1800);
+
+    setTimeout(() => {
+      window.scrollTo({ top: 0 });
+    }, 1000);
 
     AOS.init({
       duration: 1000,
     });
 
     ResetAOS();
-
   }, [location.pathname]);
 
   function ResetAOS() {
-  
     const aosElements = Array.from(document.getElementsByClassName("aos-element"));
 
     aosElements.forEach((item) => item.classList.remove("aos-animate"));
@@ -55,7 +54,7 @@ export default function App() {
   return (
     <div className="bg-[#251320] min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
       {loader && <Loader />}
-
+      
       <div className="container grid grid-cols-12 md:gap-10 justify-between">
         <div className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[175px]">
           <Profile />
@@ -66,9 +65,9 @@ export default function App() {
           </div>
           <div data-aos-delay="2000" className="aos-element lg:rounded-2xl bg-[#111111] overflow-hidden">
             <Routes>
-              <Route exact path="/" element={<About />} />
-              <Route exact path="/resume" element={<Resume />} />
-              <Route exact path="/projects" element={<Projects />} />
+              <Route path="/" element={<About /> } />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
             <Footer />
           </div>

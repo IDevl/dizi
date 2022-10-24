@@ -165,7 +165,6 @@
 }
 
 .slick-slide img {
-    filter: contrast(2);
     transition: 400ms;
     max-height: 120px;
 }
