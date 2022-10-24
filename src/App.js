@@ -7,6 +7,7 @@ import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects.jsx";
+import ProjectModal from "./pages/projects/project-modal";
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
@@ -16,9 +17,27 @@ import "aos/dist/aos.css";
 export default function App() {
   const [loader, setLoader] = useState(null);
 
+  const [selectedProject, setselectedProject] = useState(null);
+
   const location = useLocation();
 
   const { scrollYProgress } = useScroll();
+
+  const setProject = (project) => {
+    setselectedProject(project);
+  }
+
+  const unsetProject = () => {
+    setselectedProject(null);
+  }
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedProject]);
 
   useEffect(() => {
     setLoader(true);
@@ -37,7 +56,7 @@ export default function App() {
     AOS.init({
       duration: 400,
       once: true,
-      disable: 'mobile',
+      disable: "mobile",
     });
 
     ResetAOS();
@@ -70,12 +89,14 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/projects" element={<Projects setProject={setProject} />} />
               </Routes>
               <Footer />
             </div>
           </div>
         </div>
+
+        {selectedProject && <ProjectModal project={selectedProject} unsetProject={unsetProject} />}
 
         <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} />
 
