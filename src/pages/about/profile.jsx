@@ -55,9 +55,7 @@ export default function Profile() {
             </div>
             <div className="flex border-b border-[#4c4c4c] mt-5 pb-2.5">
               <span className="socialbtn bg-white bg-black text-[#F6FF2B] shadow-md">
-                <a href="https://goo.gl/maps/qQ3wKYrkCmjf2NW79" target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </a>
+                <FontAwesomeIcon icon={faLocationDot} />
               </span>
               <div className="text-left ml-2.5">
                 <p className="text-xs text-[#A6A6A6]"> Address </p>

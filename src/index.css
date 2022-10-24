@@ -20,7 +20,7 @@
     body {
         margin: 0;
         line-height: inherit;
-        background-color: #251320;
+        background-color: black;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
@@ -158,13 +158,13 @@
 .slick-slide {
     pointer-events: none;
     filter: contrast(0);
-    transition: 800ms;
+    transition: 600ms;
 }
 
 .slide-active {
     pointer-events: all;
     z-index: 999999;
-    filter: contrast(2);
+    filter: contrast(2.5);
 }
 
 .slick-slide img {

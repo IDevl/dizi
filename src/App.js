@@ -12,7 +12,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Particles from "./pages/particles/particle";
 
 export default function App() {
   const [loader, setLoader] = useState(null);
@@ -36,7 +35,7 @@ export default function App() {
     }, 1000);
 
     AOS.init({
-      duration: 1000,
+      duration: 400,
       once: true
     });
 
@@ -55,18 +54,18 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
+      <div className="min-h-screen bg-[#251320] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
         {loader && <Loader />}
         <HeaderPC />
         <div className="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
-          <div className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[170px]">
+          <div data-aos="fade-right" className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[170px]">
             <Profile />
           </div>
           <div className="col-span-12 lg:col-span-8">
-            <div data-aos="fade-in" className="aos-element">
+            <div data-aos="fade-left" className="aos-element">
               <Navbar />
             </div>
-            <div data-aos-delay="2000" className="aos-element lg:rounded-2xl bg-[#111111] overflow-hidden">
+            <div data-aos="fade-up" className="aos-element lg:rounded-2xl bg-[#111111] overflow-hidden">
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
