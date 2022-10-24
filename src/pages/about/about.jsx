@@ -7,9 +7,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useEffect } from "react";
-import clients from './clients.json'
+import clients from "./clients.json";
+import { useRef } from "react";
 
 export default function About() {
+  const slider = useRef();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -21,7 +24,7 @@ export default function About() {
     slidesToScroll: 1,
     centerMode: true,
     arrows: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 767,
@@ -39,10 +42,14 @@ export default function About() {
         },
       },
     ],
+    afterChange: (current, next) => {
+      const slideElement = slider.current.innerSlider.list.querySelector(`[data-index="${current}"]`);
+      slideElement.classList.add("slide-active");
+    },
   };
 
   useEffect(() => {
-    document.title = 'About | Jefferson Dela Cruz';
+    document.title = "About | Jefferson Dela Cruz";
   }, []);
 
   return (
@@ -97,11 +104,11 @@ export default function About() {
       </div>
 
       <Cube />
-      
+
       <div className="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
         <div className="bg-[#0D0D0D] max-w-full h-auto pt-8 rounded-xl overflow-hidden">
           <h3 className="text-center text-[2.2rem] text-white font-semibold pb-3"> Clients </h3>
-          <Slider className="mt-4" {...settings}>
+          <Slider ref={slider} className="mt-4" {...settings}>
             {clients.map((client) => (
               <div className="px-3 md:px-5" key={client.id}>
                 <a className="flex items-center justify-center py-[1em]" href={client.link} target="_blank" rel="noreferrer">

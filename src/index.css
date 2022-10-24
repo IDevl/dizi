@@ -152,6 +152,18 @@
     align-items: center;
 }
 
+.slick-slide {
+    pointer-events: none;
+    filter: contrast(0);
+    transition: 800ms;
+}
+
+.slide-active {
+    pointer-events: all;
+    z-index: 999999;
+    filter: contrast(2);
+}
+
 .slick-slide img {
     filter: contrast(2);
     transition: 400ms;
