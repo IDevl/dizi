@@ -37,6 +37,7 @@ export default function App() {
     AOS.init({
       duration: 400,
       once: true,
+      disable: 'mobile',
     });
 
     ResetAOS();
