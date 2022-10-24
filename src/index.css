@@ -20,7 +20,10 @@
     body {
         margin: 0;
         line-height: inherit;
-        background-color: black;
+        background-color: #251320;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
     }
 
     .links {
@@ -144,7 +147,7 @@
 
 /* SLICK SLIDER */
 .slick-slider {
-    background: linear-gradient(to left, #7c7c7c81, #2929297c);
+    background: linear-gradient(to top, #7c7c7c81, #2929297c);
 }
 
 .slick-track {
