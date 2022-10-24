@@ -4,13 +4,13 @@ import { useEffect } from "react";
 
 const education = [
   {
-    year: "2018-2022",
+    year: "JUN 2018 - OCT 2022",
     name: "BS Information Technology",
     location: "Polytechnic University of the Philippines",
     description: ['Lead, design, and developed an educational android game application entitled "Gosu Kid" for the learning of Grade Three students.', "Facilitates academic and development collaboration with colleagues in project-making", "Graduated Cum Laude."],
   },
   {
-    year: "2016-2018",
+    year: "JUNE 2016 - APR 2018",
     name: "STEM Strand",
     location: "Systems Technology Institute College",
     description: ["Pursue a degree focusing on mathematics and engineering.", "Gain the foundational knowledge to solve real-world problems and keep up with technological advancements in fields of Information technology, engineering, and medicine."],
@@ -19,13 +19,13 @@ const education = [
 
 const experiences = [
   {
-    year: "2021-2022",
+    year: "JAN 2021 - NOV 2022",
     name: "Web Development",
     location: "Exceed Digital Solutions",
     description: ["Integrated, modified, and developed responsive ecommerce and company websites with WordPress and Shopify.", "Coordinates with the team to resolve conflicts, prioritize needs and develop content criteria of a website."],
   },
   {
-    year: "2021-2022",
+    year: "APR 2022 - JUL 2022",
     name: "Internship",
     location: "Exceed Digital Solutions",
     description: ["Practiced of scripting languages, primarily Javascript frameworks.", "Trained to use management tools, content creation tools, applications, and digital media.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
@@ -122,8 +122,8 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="container bg-black py-12 px-2 sm:px-5 md:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="lg:container bg-black py-12 px-2 sm:px-5 md:px-10">
+        <div className="grid grid-cols-1 gap-10">
           <div className="col-span-1">
             <h4 className="text-[1.6rem] text-white font-[500] mb-8"> Working Skills </h4>
 
