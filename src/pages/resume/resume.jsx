@@ -7,7 +7,7 @@ const education = [
     year: "JUN 2018 - OCT 2022",
     name: "BS Information Technology",
     location: "Polytechnic University of the Philippines",
-    description: ['Lead, design, and developed an educational android game application entitled "Gosu Kid" for the learning of Grade Three students.', "Facilitates academic and development collaboration with colleagues in project-making", "Graduated Cum Laude."],
+    description: ['Lead, design, and developed an educational android game application entitled "Gosu Kid" for the learning of Grade Three students.', "Facilitates academic and development collaboration with colleagues in project-making.", "Graduated Cum Laude."],
   },
   {
     year: "JUNE 2016 - APR 2018",
