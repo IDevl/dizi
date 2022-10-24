@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 import classnames from "classnames";
 import { Link, useLocation } from "react-router-dom";
 

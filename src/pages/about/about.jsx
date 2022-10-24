@@ -42,7 +42,7 @@ export default function About() {
         },
       },
     ],
-    afterChange: (current, next) => {
+    afterChange: (current) => {
       const slideElement = slider.current.innerSlider.list.querySelector(`[data-index="${current}"]`);
       slideElement.classList.add("slide-active");
     },
