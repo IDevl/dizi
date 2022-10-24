@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebookF, faLinkedinIn, faBehance } from "@fortawesome/free-brands-svg-icons";
 import { faMobileScreenButton, faDownload, faEnvelope, faLocationDot, faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
@@ -10,21 +10,26 @@ export default function Profile() {
           <img src={process.env.PUBLIC_URL + "/img/about/profile-pic.jpg"} className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px] object-cover object-top" alt="Picture_Profile" />
         </a>
         <div className="pt-[100px] pb-8">
-          <h2 className="mt-6 mb-1 text-[26px] font-semibold text-white"> Jefferson Dela Cruz </h2>
-          <h3 className="mb-4 inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]"> Web Developer </h3>
+          <h2 className="mt-6 mb-2 text-[26px] font-semibold text-white"> Jefferson Dela Cruz </h2>
+          <h3 className="mb-4 inline-block bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]"> Developer </h3>
           <div className="flex justify-center space-x-3">
             <a href="https://www.linkedin.com/in/jefferson-dc/" target="_blank" rel="noreferrer">
-              <span className="socialbtn text-[#0B65C3]">
+              <span className="socialbtn text-[#fff]">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </span>
             </a>
             <a href="https://www.facebook.com/lNyep" target="_blank" rel="noreferrer">
-              <span className="socialbtn text-[#1298F6]">
+              <span className="socialbtn text-[#fff]">
                 <FontAwesomeIcon icon={faFacebookF} />
               </span>
             </a>
+            <a href="https://www.behance.net/jeffdelacruz4" target="_blank" rel="noreferrer">
+              <span className="socialbtn text-[#fff]">
+                <FontAwesomeIcon icon={faBehance} />
+              </span>
+            </a>
             <a href="https://twitter.com/jeppdc" target="_blank" rel="noreferrer">
-              <span className="socialbtn text-[#1D9BF0]">
+              <span className="socialbtn text-[#fff]">
                 <FontAwesomeIcon icon={faTwitter} />
               </span>
             </a>
