@@ -173,10 +173,6 @@
 }
 
 /* SCROLL BAR */
-body::-webkit-scrollbar {
-    width: 0em;
-}
-
 .modal::-webkit-scrollbar {
     width: 0.6em;
 }
