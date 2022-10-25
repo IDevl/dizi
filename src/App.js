@@ -98,7 +98,7 @@ export default function App() {
 
         {selectedProject && <ProjectModal project={selectedProject} unsetProject={unsetProject} />}
 
-        <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} />
+        {/* <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} /> */}
 
         <HeaderMobile />
       </div>
