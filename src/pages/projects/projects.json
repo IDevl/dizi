@@ -8,6 +8,14 @@
     "skills": ["Unity", "C#", "Firebase", "Photoshop", "Leantween"]
   },
   {
+    "image": "/img/projects/wrapup.png",
+    "title": "Wrap Up PH",
+    "category": "Website Development",
+    "description": "Wrap Up specializes in personalized gifts & prints for personal and corporate use. Their products include different kinds of wrappers, tags & cards, stickers, notepads & notebooks, photo prints and more.",
+    "link": "https://wrapup.ph/",
+    "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
+  },
+  {
     "image": "/img/projects/fiestaextravaganza.png",
     "title": "Fiesta Extravaganza",
     "category": "Website Development",
