@@ -75,7 +75,7 @@ const skills = [
   },
 ];
 
-const knowledges = ["WordPress", "Shopify", "InMotion", "HTML", "CSS", "Javascript", "PHP", "ReactJS", "NodeJS", "MongoDB", "Unity 2D", "C#", "Firebase", "Git", "Java", "C++", "Python", "mySQL", "MS Office", "Asana"];
+const knowledges = ["WordPress", "Shopify", "InMotion", "HTML", "CSS", "Javascript", "PHP", "ReactJS", "NodeJS", "MongoDB", "Unity 2D", "C#", "Firebase", "Git", "Java", "C++", "Python", "mySQL", "MS Office", "Asana", "Figma"];
 
 export default function Resume() {
   useEffect(() => {
