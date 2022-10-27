@@ -51,15 +51,15 @@ export default function App() {
 
     setTimeout(() => {
       window.scrollTo({ top: 0 });
-    }, 1000);
+      AOS.init({
+        duration: 400,
+        once: true,
+        disable: "mobile",
+      });
+  
+      setTimeout(() => { ResetAOS(); }, 50);
+    }, 50);
 
-    AOS.init({
-      duration: 400,
-      once: true,
-      disable: "mobile",
-    });
-
-    ResetAOS();
   }, [location.pathname]);
 
   function ResetAOS() {
