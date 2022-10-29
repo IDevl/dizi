@@ -25,15 +25,15 @@
   },
   {
     "image": "/img/projects/myportfoliorevamp.png",
-    "title": "My Portfolio (NEW)",
+    "title": "My Latest Website Portfolio",
     "category": "Website Development",
     "description": "An redevelopment of my website portfolio from Bootstrap to ReactJS and TailwindCSS framework.",
     "link": "https://idevl.github.io/dizi/",
     "skills": ["ReactJS", "TailwindCSS"]
   },
   {
-    "image": "/img/projects/myportfoliorevamp.png",
-    "title": "My Portfolio (OLD)",
+    "image": "/img/projects/dcwebsite.png",
+    "title": "My Old Website Portfolio",
     "category": "Website Development",
     "description": "My old website portfolio developed using Bootstrap.",
     "link": "https://idevl.github.io/DCWebsite/",
