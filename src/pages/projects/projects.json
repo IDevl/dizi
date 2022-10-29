@@ -3,9 +3,17 @@
     "image": "/img/projects/gosukid.png",
     "title": "Gosu Kid",
     "category": "Game Development",
-    "description": "Gosu Kid is an educational android mobile game application that will help the Grade Three students to improve their skills and motivation in learning.",
+    "description": "Gosu Kid is an educational android mobile game application that will help Grade Three students on improving their motivation in learning.",
     "link": "https://idevl.github.io/GosuKidWebsite/",
     "skills": ["Unity", "C#", "Firebase", "Photoshop", "Leantween"]
+  },
+  {
+    "image": "/img/projects/cgitechexam.png",
+    "title": "CRUD Web Application w/ Authentication",
+    "category": "Web Application Development",
+    "description": "A simple web application developed within two days of timeframe using react.js, node.js, Express, and MongoDB frameworks.",
+    "link": "https://cgi-tech-jeffersondc.herokuapp.com/",
+    "skills": ["ReactJS", "NodeJS", "Express", "MongoDB", "MantineUI"]
   },
   {
     "image": "/img/projects/wrapup.png",
@@ -230,14 +238,6 @@
     "description": "A start-up cafe bar managed by only two students. Located near the city, escape the urban rush by visiting our coffee shop.",
     "link": "https://jgcafe.netlify.app",
     "skills": ["Bootstrap", "HTML", "CSS", "Javascript", "Netlify"]
-  },
-  {
-    "image": "/img/projects/cgitechexam.png",
-    "title": "Technical Exam (CGI Application)",
-    "category": "Web Application Development",
-    "description": "A simple web application developed within two days of timeframe using react.js, node.js, Express, and MongoDB frameworks.",
-    "link": "https://cgi-tech-jeffersondc.herokuapp.com/",
-    "skills": ["ReactJS", "NodeJS", "Express", "MongoDB", "MantineUI"]
   },
   {
     "image": "/img/projects/myportfoliorevamp.png",
