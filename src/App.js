@@ -42,6 +42,8 @@ export default function App() {
   useEffect(() => {
     setLoader(true);
 
+    unsetProject();
+
     document.body.style.overflow = "hidden";
 
     setTimeout(() => {
