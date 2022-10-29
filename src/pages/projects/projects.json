@@ -16,6 +16,30 @@
     "skills": ["ReactJS", "NodeJS", "Express", "MongoDB", "MantineUI"]
   },
   {
+    "image": "/img/projects/jgcoffeeandbean.png",
+    "title": "JG Coffee and Bean",
+    "category": "Website Development",
+    "description": "A start-up cafe bar managed by only two students. Located near the city, escape the urban rush by visiting our coffee shop.",
+    "link": "https://jgcafe.netlify.app",
+    "skills": ["Bootstrap", "HTML", "CSS", "Javascript", "Netlify"]
+  },
+  {
+    "image": "/img/projects/myportfoliorevamp.png",
+    "title": "My Portfolio (NEW)",
+    "category": "Website Development",
+    "description": "An redevelopment of my website portfolio from Bootstrap to ReactJS and TailwindCSS framework.",
+    "link": "https://idevl.github.io/dizi/",
+    "skills": ["ReactJS", "TailwindCSS"]
+  },
+  {
+    "image": "/img/projects/myportfoliorevamp.png",
+    "title": "My Portfolio (OLD)",
+    "category": "Website Development",
+    "description": "My old website portfolio developed using Bootstrap.",
+    "link": "https://idevl.github.io/DCWebsite/",
+    "skills": ["Bootstrap", "HTML", "CSS", "Javascript", "ParticlesJS"]
+  },
+  {
     "image": "/img/projects/wrapup.png",
     "title": "Wrap Up PH",
     "category": "Website Development",
@@ -230,21 +254,5 @@
     "description": "Jarhead Construction is a Veteran-operated roofing contractor that provides roofing services to home and commercial property owners.",
     "link": "https://jarheadconstruction.com",
     "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
-  },
-  {
-    "image": "/img/projects/jgcoffeeandbean.png",
-    "title": "JG Coffee and Bean",
-    "category": "Website Development",
-    "description": "A start-up cafe bar managed by only two students. Located near the city, escape the urban rush by visiting our coffee shop.",
-    "link": "https://jgcafe.netlify.app",
-    "skills": ["Bootstrap", "HTML", "CSS", "Javascript", "Netlify"]
-  },
-  {
-    "image": "/img/projects/myportfoliorevamp.png",
-    "title": "My Portfolio (Revamp)",
-    "category": "Website Development",
-    "description": "An ongoing project for the redevelopment of my website portfolio from Bootstrap to ReactJS and TailwindCSS framework.",
-    "link": "https://idevl.github.io/dizi/",
-    "skills": ["Personal", "ReactJS", "TailwindCSS"]
   }
 ]
