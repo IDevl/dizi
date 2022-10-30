@@ -54,12 +54,12 @@ export default function About() {
 
   return (
     <>
-      <div className="pt-12 py-10 px-2 sm:px-5 md:px-10">
+      <div className="lg:pt-10 pb-10 px-2 sm:px-5 md:px-10">
         <div className="lg:hidden">
           <Profile />
         </div>
 
-        <h2 className="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">About Me</h2>
+        <h2 className="page-title-headline text-black dark:text-[white] flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7 after:bg-black dark:after:bg-gradient-to-l from-[#df0000] to-[#550089]">About Me</h2>
         <div className="lg:grid grid-cols-12 md:gap-10 pt-4 pt-[30px] items-center">
           <div className="col-span-12 space-y-2.5">
             <p className="text-[#b3b3b3] leading-8 text-[1rem]"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>

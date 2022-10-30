@@ -8,10 +8,11 @@ module.exports = {
       screens: {
         lg: '992px',
         xl: '1200px',
-        '2xl': '1366px',
+        '2xl': '1300px',
       },
     },
   },
   variants: {},
   plugins: [],
+  darkMode: 'class',
 }

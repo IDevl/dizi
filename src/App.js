@@ -76,10 +76,10 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#111111] lg:bg-[#251320] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
+      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
         {loader && <Loader />}
         <HeaderPC />
-        <div className="lg:container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
+        <div className="lg:container grid grid-cols-12 md:gap-10 justify-between lg:mt-[200px]">
           <div data-aos="fade-right" className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[170px]">
             <Profile />
           </div>
@@ -87,7 +87,7 @@ export default function App() {
             <div data-aos="fade-left" className="aos-element">
               <Navbar />
             </div>
-            <div data-aos="fade-up" className="aos-element lg:rounded-2xl bg-[#111111] overflow-hidden">
+            <div data-aos="fade-up" className="aos-element lg:rounded-2xl bg-white dark:bg-[#111111] overflow-hidden">
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />

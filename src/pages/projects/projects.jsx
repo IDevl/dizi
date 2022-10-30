@@ -13,8 +13,8 @@ export default function Projects({setProject}) {
 
   return (
     <>
-      <div className="container py-10 px-2 sm:px-5 md:px-10">
-        <h2 className="page-title-headline flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7">Projects</h2>
+      <div className="container lg:pt-10 pb-10 px-2 sm:px-5 md:px-10">
+        <h2 className="page-title-headline text-black dark:text-[white] flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7 after:bg-black dark:after:bg-gradient-to-l from-[#df0000] to-[#550089]">Projects</h2>
         <ul className="mt-8 flex w-full justify-start md:justify-end flex-wrap font-[500] text-white text-[0.85rem] sm:text-[1rem]">
           <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s]", category === "Dev" && "text-[#bf58ff]")} onClick={() => setCategory("Dev")}>
             {" "}
