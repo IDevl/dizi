@@ -111,10 +111,6 @@
 }
 
 /* SLICK SLIDER */
-.slick-slider {
-    background: linear-gradient(to top, #7c7c7c81, #2929297c);
-}
-
 .slick-track {
     display: flex !important;
     align-items: center;

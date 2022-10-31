@@ -79,7 +79,7 @@ const knowledges = ["WordPress", "Shopify", "InMotion", "HTML", "CSS", "Javascri
 
 export default function Resume() {
   useEffect(() => {
-    document.title = 'Resume | Jefferson Dela Cruz';
+    document.title = "Resume | Jefferson Dela Cruz";
   }, []);
   return (
     <>
@@ -88,33 +88,32 @@ export default function Resume() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div>
             <div className="flex items-center space-x-3 mb-5">
-              <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faGraduationCap} />
-              <h4 className="text-[1.6rem] text-white font-[500]"> Education </h4>
+              <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faGraduationCap} />
+              <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Education </h4>
             </div>
             {education.map((education) => (
-              <div className="mt-5 bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg border-[#383838] border-[1px]">
-                <span className="text-[1rem] text-[#b7b7b7]"> {education.year} </span>
-                <h3 className="text-[1.35rem] text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
-                <p className="text-[0.95rem] text-white"> {education.location} </p>
+              <div className="mt-5 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+                <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
+                <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
                 {education.description.map((description) => (
-                  <p className="text-[0.8rem] text-[#b7b7b7]"> &#x2022; {description} </p>
+                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
                 ))}
               </div>
             ))}
-            ;
           </div>
           <div>
             <div className="flex items-center space-x-3 mb-5">
-              <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faBriefcase} />
-              <h4 className="text-[1.6rem] text-white font-[500]"> Experience </h4>
+              <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faBriefcase} />
+              <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Experience </h4>
             </div>
             {experiences.map((experiences) => (
-              <div className="mt-5 bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg border-[#383838] border-[1px]">
-                <span className="text-[1rem] text-[#b7b7b7]"> {experiences.year} </span>
-                <h3 className="text-[1.35rem] text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
-                <p className="text-[0.95rem] text-white"> {experiences.location} </p>
+              <div className="mt-5 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+                <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {experiences.year} </span>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
+                <p className="text-[1rem] text-black dark:text-white"> {experiences.location} </p>
                 {experiences.description.map((description) => (
-                  <p className="text-[0.8rem] text-[#b7b7b7]"> &#x2022; {description} </p>
+                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
                 ))}
               </div>
             ))}
@@ -122,29 +121,29 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="lg:container bg-black py-12 px-2 sm:px-5 md:px-10">
-        <div className="grid grid-cols-1 gap-10">
+      <div className="lg:container bg-[#F3F6F6] dark:bg-black py-12 px-2 sm:px-5 md:px-10">
+        <div className="grid grid-cols-1 gap-8">
           <div className="col-span-1">
-            <h4 className="text-[1.6rem] text-white font-[500] mb-8"> Working Skills </h4>
+            <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Working Skills </h4>
 
             {skills.map((skills) => (
               <div className="mb-5">
                 <div className="flex justify-between mb-1">
-                  <span className="font-semibold text-[#A6A6A6]"> {skills.name} </span>
-                  <span className="font-semibold text-[#A6A6A6]"> {skills.percentage} </span>
+                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.name} </span>
+                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.percentage} </span>
                 </div>
-                <div className="w-full rounded-full h-1 bg-[#1c1c1c] mt-[10px]">
-                  <div className="h-1 rounded" style={skills.style}></div>
+                <div className="w-full rounded-full h-2.5 bg-white dark:bg-[#1c1c1c] mt-[10px]">
+                  <div className="h-2.5" style={skills.style}></div>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-[1.6rem] text-white font-[500] mb-8"> Knowledges </h4>
-            <div className="flex gap-2.5 flex-wrap">
+            <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Knowledges </h4>
+            <div className="flex gap-3.5 flex-wrap">
               {knowledges.map((knowledges) => (
-                <button className="bg-[#1C1C1C] hover:bg-[#9d00ff] text-[#b7b7b7] text-[0.9rem] font-[500] hover:text-white px-3 py-2 rounded-lg duration-500">{knowledges}</button>
+                <button className="bg-[#ededed] dark:bg-[#1C1C1C] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-black dark:text-[#b7b7b7] text-[0.9rem] font-[500] dark:hover:text-white px-3 py-2 rounded-lg duration-500 shadow-md">{knowledges}</button>
               ))}
             </div>
           </div>

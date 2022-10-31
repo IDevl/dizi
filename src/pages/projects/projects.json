@@ -9,7 +9,7 @@
   },
   {
     "image": "/img/projects/cgitechexam.png",
-    "title": "CRUD Web Application w/ Authentication",
+    "title": "CRUD Web Application",
     "category": "Web Application Development",
     "description": "A simple web application developed within two days of timeframe using react.js, node.js, Express, and MongoDB frameworks.",
     "link": "https://cgi-tech-jeffersondc.herokuapp.com/",
@@ -25,7 +25,7 @@
   },
   {
     "image": "/img/projects/myportfoliorevamp.png",
-    "title": "My Latest Website Portfolio",
+    "title": "Latest Website Portfolio",
     "category": "Website Development",
     "description": "An redevelopment of my website portfolio from Bootstrap to ReactJS and TailwindCSS framework.",
     "link": "https://idevl.github.io/dizi/",
@@ -33,7 +33,7 @@
   },
   {
     "image": "/img/projects/dcwebsite.png",
-    "title": "My Old Website Portfolio",
+    "title": "Old Website Portfolio",
     "category": "Website Development",
     "description": "My old website portfolio developed using Bootstrap.",
     "link": "https://idevl.github.io/DCWebsite/",

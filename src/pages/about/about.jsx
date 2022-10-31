@@ -62,33 +62,33 @@ export default function About() {
         <h2 className="page-title-headline text-black dark:text-[white] flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7 after:bg-black dark:after:bg-gradient-to-l from-[#df0000] to-[#550089]">About Me</h2>
         <div className="lg:grid grid-cols-12 md:gap-10 pt-4 pt-[30px] items-center">
           <div className="col-span-12 space-y-2.5">
-            <p className="text-[#b3b3b3] leading-8 text-[1rem]"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
+            <p className="text-black dark:text-[#b3b3b3] leading-8 text-[1rem]"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
           </div>
         </div>
       </div>
 
       <div className="px-2 sm:px-5 md:px-10">
-        <h3 className="text-[2.2rem] text-white font-semibold pb-5"> What I do! </h3>
+        <h3 className="text-[2.2rem] text-black dark:text-white font-semibold pb-5"> What I do! </h3>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#383838] bg-transparent">
+          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
             <FontAwesomeIcon className="text-[#00c4ff] text-[30px]" icon={faLaptop} />
             <div className="space-y-2">
-              <h3 className="text-white text-[1.25rem] font-semibold"> Web Development </h3>
-              <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Integrate, modify, and develop responsive ecommerce and company websites with WordPress and Shopify. </p>
+              <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Web Development </h3>
+              <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Integrate, modify, and develop responsive ecommerce and company websites with WordPress and Shopify. </p>
             </div>
           </div>
-          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#383838] bg-transparent">
+          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
             <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faMobile} />
             <div className="space-y-2">
-              <h3 className="text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
-              <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]"> Knowledge of implementing user interfaces of mobile applications, primarily Flutter and React Native frameworks. </p>
+              <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
+              <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Knowledge of implementing user interfaces of mobile applications, primarily Flutter and React Native frameworks. </p>
             </div>
           </div>
-          <div className="flex items-start gap-4 p-4 rounded-xl border-[1px] border-[#383838] bg-transparent">
+          <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
             <FontAwesomeIcon className="text-[#ffd400] text-[35px]" icon={faUncharted} />
             <div className="space-y-2">
-              <h3 className="text-white text-[1.25rem] font-semibold"> Game Development </h3>
-              <p className="leading-8 text-gray-lite text-[#A6A6A6] text-[0.9rem]">
+              <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Game Development </h3>
+              <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]">
                 {" "}
                 Developed an educational android mobile game application for the learning of Grade Three students entitled{" "}
                 <strong>
@@ -106,8 +106,8 @@ export default function About() {
       <Cube />
 
       <div className="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
-        <div className="bg-[#0D0D0D] max-w-full h-auto pt-8 rounded-xl overflow-hidden">
-          <h3 className="text-center text-[2.2rem] text-white font-semibold pb-3"> Clients </h3>
+        <div className="bg-[#F3F6F6] dark:bg-[#0D0D0D] max-w-full h-auto pt-8 rounded-xl overflow-hidden">
+          <h3 className="text-center text-[2.2rem] text-black dark:text-white font-semibold pb-3"> Clients </h3>
           <Slider ref={slider} className="mt-4" {...settings}>
             {clients.map((client) => (
               <div className="px-3 md:px-5" key={client.id}>
