@@ -71,28 +71,28 @@ export default function About() {
         <h3 className="text-[2.2rem] text-black dark:text-white font-semibold pb-5"> What I do! </h3>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
           <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
-            <FontAwesomeIcon className="text-[#00c4ff] text-[30px]" icon={faLaptop} />
+            <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#00c4ff] text-[30px]" icon={faLaptop} />
             <div className="space-y-2">
               <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Web Development </h3>
               <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Integrate, modify, and develop responsive ecommerce and company websites with WordPress and Shopify. </p>
             </div>
           </div>
           <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
-            <FontAwesomeIcon className="text-[#AF54D2] text-[30px]" icon={faMobile} />
+            <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faMobile} />
             <div className="space-y-2">
               <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
               <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Knowledge of implementing user interfaces of mobile applications, primarily Flutter and React Native frameworks. </p>
             </div>
           </div>
           <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
-            <FontAwesomeIcon className="text-[#ffd400] text-[35px]" icon={faUncharted} />
+            <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#ffd400] text-[35px]" icon={faUncharted} />
             <div className="space-y-2">
               <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Game Development </h3>
               <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]">
                 {" "}
                 Developed an educational android mobile game application for the learning of Grade Three students entitled{" "}
                 <strong>
-                  <a className="links" href="https://idevl.github.io/GosuKidWebsite/" target="_blank" rel="noreferrer">
+                  <a className="dark:links" href="https://idevl.github.io/GosuKidWebsite/" target="_blank" rel="noreferrer">
                     Gosu Kid
                   </a>
                 </strong>

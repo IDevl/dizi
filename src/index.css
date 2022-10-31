@@ -138,9 +138,18 @@
     width: 0.6em;
 }
 
+html[class='dark'] {
+    --scrollbar-color: white;
+}
+
+html[class=''] {
+    --scrollbar-color: black;
+}
 
 .modal::-webkit-scrollbar-thumb {
     padding-top: 1em;
-    background: white;
     border-radius: 50px;
+    background: var(--scrollbar-color);
 }
+
+
