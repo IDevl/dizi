@@ -33,7 +33,7 @@ export default function Projects({setProject}) {
             Web Application{" "}
           </li>
         </ul>
-        <motion.div className="flex flex-wrap gap-8 mt-8 min-h-[100vh]">
+        <motion.div className="flex flex-wrap items-start gap-8 mt-8 min-h-[100vh]">
           {projects
             .filter((projects) => projects.category.includes(category))
             .map((projects) => (
