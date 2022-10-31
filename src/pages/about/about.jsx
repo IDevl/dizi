@@ -108,7 +108,7 @@ export default function About() {
       <div className="px-2 sm:px-5 md:px-10 lg:px-14 my-8">
         <div className="bg-[#F3F6F6] dark:bg-[#0D0D0D] max-w-full h-auto pt-8 rounded-xl overflow-hidden">
           <h3 className="text-center text-[2.2rem] text-black dark:text-white font-semibold pb-3"> Clients </h3>
-          <Slider ref={slider} className="mt-4" {...settings}>
+          <Slider ref={slider} className="my-4" {...settings}>
             {clients.map((client) => (
               <div className="px-3 md:px-5" key={client.id}>
                 <a className="flex items-center justify-center py-[1em]" href={client.link} target="_blank" rel="noreferrer">
