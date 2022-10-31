@@ -3,14 +3,10 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
 export default function HeaderPC() {
-  const [theme, setTheme] = useState(localStorage.theme);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
-    setTheme(localStorage.theme);
-  }, []);
-
-  useEffect(() => {
-    console.log(theme);
+    console.log(theme)
     if (theme === "dark") {
       localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
