@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import projects from "./projects.json";
 import classnames from "classnames";
-import { motion } from "framer-motion";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
-export default function Projects({setProject}) {
-
+export default function Projects({ setModalData }) {
   const [category, setCategory] = useState("Dev");
 
   useEffect(() => {
@@ -33,19 +32,21 @@ export default function Projects({setProject}) {
             Web Application{" "}
           </li>
         </ul>
-        <motion.div className="flex flex-wrap items-start gap-8 mt-8 min-h-[100vh]">
-          {projects
-            .filter((projects) => projects.category.includes(category))
-            .map((projects) => (
-              <motion.div transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-100 md:w-[47%] bg-white dark:bg-transparent p-6 border-[2px] border-white dark:border-[#212425] shadow-lg shadow-[#b7b7b7] dark:shadow-none rounded-lg">
-                <div className="overflow-hidden shadow-xl" onClick={() => setProject(projects)}>
-                  <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
+        <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
+          <Masonry gutter="2rem" className="mt-8 min-h-[100vh]">
+            {projects
+              .filter((projects) => projects.category.includes(category))
+              .map((projects, index) => (
+                <div key={index} transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-100 bg-white dark:bg-transparent p-6 border-[2px] border-white dark:border-[#212425] shadow-lg shadow-[#b7b7b7] dark:shadow-none rounded-lg">
+                  <div className="overflow-hidden shadow-xl" onClick={() => setModalData(projects)}>
+                    <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
+                  </div>
+                  <span className="pt-5 text-[0.85rem] block text-black dark:text-[#A6A6A6]"> {projects.category} </span>
+                  <h2 className="text-[1.2rem] font-[620] duration-300 text-black dark:text-white mt-1"> {projects.title} </h2>
                 </div>
-                <span className="pt-5 text-[0.85rem] block text-black dark:text-[#A6A6A6]"> {projects.category} </span>
-                <h2 className="text-[1.5rem] font-[620] duration-300 text-black dark:text-white mt-1"> {projects.title} </h2>
-              </motion.div>
-            ))}
-        </motion.div>
+              ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </>
   );

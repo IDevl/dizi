@@ -7,42 +7,40 @@ import Profile from "./pages/about/profile";
 import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects.jsx";
-import ProjectModal from "./pages/projects/project-modal";
+import Certificates from "./pages/certificates/certificates.jsx";
+import Modal from "./pages/modal/modal";
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { motion, useScroll } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
   const [loader, setLoader] = useState(null);
 
-  const [selectedProject, setselectedProject] = useState(null);
+  const [selectedModalData, setSelectedModalData] = useState(null);
 
   const location = useLocation();
 
-  const { scrollYProgress } = useScroll();
-
-  const setProject = (project) => {
-    setselectedProject(project);
+  const setModalData = (modalData) => {
+    setSelectedModalData(modalData);
   }
 
-  const unsetProject = () => {
-    setselectedProject(null);
+  const unsetModalData = () => {
+    setSelectedModalData(null);
   }
 
   useEffect(() => {
-    if (selectedProject) {
+    if (selectedModalData) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [selectedProject]);
+  }, [selectedModalData]);
 
   useEffect(() => {
     setLoader(true);
 
-    unsetProject();
+    unsetModalData();
 
     document.body.style.overflow = "hidden";
 
@@ -91,14 +89,15 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/projects" element={<Projects setProject={setProject} />} />
+                <Route path="/projects" element={<Projects setModalData={setModalData} />} />
+                <Route path="/certificates" element={<Certificates setModalData={setModalData} />} />
               </Routes>
               <Footer />
             </div>
           </div>
         </div>
 
-        {selectedProject && <ProjectModal project={selectedProject} unsetProject={unsetProject} />}
+        {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} />}
 
         {/* <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} /> */}
 

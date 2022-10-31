@@ -6,7 +6,6 @@ export default function HeaderPC() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
-    console.log(theme)
     if (theme === "dark") {
       localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");

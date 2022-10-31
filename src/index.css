@@ -42,7 +42,7 @@
     .menu-item {
         display: flex;
         height: 5rem;
-        width: 5rem;
+        width: 6rem;
         cursor: pointer;
         flex-direction: column;
         align-items: center;
@@ -155,5 +155,3 @@ html[class=''] {
 *:focus {
     outline: none;
 }
-
-
