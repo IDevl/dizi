@@ -125,12 +125,12 @@
 .slide-active {
     pointer-events: all;
     z-index: 999999;
-    filter: contrast(2.5);
+    filter: contrast(1.5);
 }
 
 .slick-slide img {
     transition: 400ms;
-    max-height: 120px;
+    max-height: 100px;
 }
 
 /* SCROLL BAR */
@@ -150,6 +150,10 @@ html[class=''] {
     padding-top: 1em;
     border-radius: 50px;
     background: var(--scrollbar-color);
+}
+
+*:focus {
+    outline: none;
 }
 
 
