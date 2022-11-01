@@ -10,6 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Build
+        run: npm install --force
+
+      - name: Test
+        run: npm run test
+
       - name: Deploy
         run: npm run deploy
 
