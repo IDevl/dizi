@@ -15,6 +15,7 @@ jobs:
       - run: npm run build
       - run: npm test
       - name: Deploy  
+        uses: IDevl/dizi@v1
         with:
           target_branch: gh-pages
           build_dir: build
