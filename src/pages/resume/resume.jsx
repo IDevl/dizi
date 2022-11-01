@@ -92,7 +92,7 @@ export default function Resume() {
               <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Education </h4>
             </div>
             {education.map((education) => (
-              <div className="mt-5 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
                 <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
                 <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
@@ -108,7 +108,7 @@ export default function Resume() {
               <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Experience </h4>
             </div>
             {experiences.map((experiences) => (
-              <div className="mt-5 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {experiences.year} </span>
                 <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
                 <p className="text-[1rem] text-black dark:text-white"> {experiences.location} </p>
@@ -121,7 +121,7 @@ export default function Resume() {
         </div>
       </div>
 
-      <div className="lg:container bg-[#F3F6F6] dark:bg-black py-12 px-2 sm:px-5 md:px-10">
+      <div className="lg:container bg-transparent dark:bg-black py-12 px-2 sm:px-5 md:px-10">
         <div className="grid grid-cols-1 gap-8">
           <div className="col-span-1">
             <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Working Skills </h4>
@@ -132,7 +132,7 @@ export default function Resume() {
                   <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.name} </span>
                   <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.percentage} </span>
                 </div>
-                <div className="w-full rounded-full h-2.5 bg-white dark:bg-[#1c1c1c] mt-[10px]">
+                <div className="w-full h-2.5 bg-[#F3F6F6] dark:bg-[#1c1c1c] mt-[10px]">
                   <div className="h-2.5" style={skills.style}></div>
                 </div>
               </div>

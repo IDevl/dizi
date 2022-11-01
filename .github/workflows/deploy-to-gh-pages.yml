@@ -1,4 +1,4 @@
-name: DC Website
+name: dizi Website CI
 
 on: 
   push: 
