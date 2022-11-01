@@ -62,7 +62,10 @@ export default function About() {
         <h2 className="page-title-headline text-black dark:text-[white] flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7 after:bg-black dark:after:bg-gradient-to-l from-[#df0000] to-[#550089]">About Me</h2>
         <div className="lg:grid grid-cols-12 md:gap-10 pt-4 pt-[30px] items-center">
           <div className="col-span-12 space-y-2.5">
-            <p className="text-black dark:text-[#b3b3b3] leading-8 text-[1rem]"> Logical, solution-focused IT professional with 2 years of experienced in Web Development. An enthusiast in application and software development and design, and have the perseverance to expand in-depth knowledge and skills through developing real-world projects. </p>
+            <p className="text-black dark:text-[#b3b3b3] leading-8 text-[1rem]">
+              {" "}
+              Logical, solution-focused IT graduate with almost two years of experience in Web Development. An enthusiast in application and software development and currently looking for a new developer role to expand in-depth knowledge and skills in programming and development through developing real-world projects in the field of Information Technology.{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -112,7 +115,14 @@ export default function About() {
             {clients.map((client) => (
               <div className="px-3 md:px-5" key={client.id}>
                 <a className="flex items-center justify-center py-[1em]" href={client.link} target="_blank" rel="noreferrer">
-                  <img src={client.src} alt={client.id} />
+                  <img
+                    src={client.src}
+                    alt={client.id}
+                    onError={({ currentTarget }) => {
+                      currentTarget.onerror = null; // prevents looping
+                      currentTarget.src = "https://picsum.photos/100/100";
+                    }}
+                  />
                 </a>
               </div>
             ))}

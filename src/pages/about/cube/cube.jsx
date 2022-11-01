@@ -20,7 +20,7 @@ export default function LogoCube() {
     <div className="my-[120px] min-h-[150px]">
       <div className="stage-cube-container">
         <Cube className="cubespinner" size={150}>
-          <div className="face1 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face1 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-js" className="svg-inline--fa fa-square-js text-black dark:text-[#F7D33C]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 fill="currentColor"
@@ -28,7 +28,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div className="face2 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face2 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="wordpress" className="svg-inline--fa fa-wordpress text-black dark:text-[#00c0ff]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 fill="currentColor"
@@ -36,7 +36,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div className="face3 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face3 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="java" className="svg-inline--fa fa-java text-black dark:text-[#F0931C]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path
                 fill="currentColor"
@@ -44,7 +44,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div className="face4 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face4 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="react" className="svg-inline--fa fa-react text-black dark:text-[#43CEF3]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 fill="currentColor"
@@ -52,7 +52,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div className="face5 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face5 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="unity" className="svg-inline--fa fa-unity text-black dark:text-[#ffffff]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 512">
               <path
                 fill="currentColor"
@@ -60,7 +60,7 @@ export default function LogoCube() {
               ></path>
             </svg>
           </div>
-          <div className="face6 bg-white dark:bg-black bg-opacity-90 border-[1px] border-[black] dark:border-[white]" id="cube-side">
+          <div className="face6 bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 border-[1px] border-[black] dark:border-[white]" id="cube-side">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" className="svg-inline--fa fa-github text-black dark:text-[#ffffff]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
               <path
                 fill="currentColor"

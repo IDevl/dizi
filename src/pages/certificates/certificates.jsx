@@ -23,9 +23,9 @@ export default function Certificates({ setModalData }) {
             {" "}
             DICT{" "}
           </li>
-          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "ReSkillz Cert" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("ReSkillz Cert")}>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "ReSkills Cert" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("ReSkills Cert")}>
             {" "}
-            ReSkillz{" "}
+            ReSkills{" "}
           </li>
           <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "PUP Cert" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("PUP Cert")}>
             {" "}
@@ -33,12 +33,12 @@ export default function Certificates({ setModalData }) {
           </li>
         </ul>
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
-          <Masonry gutter="2rem" className="mt-8 min-h-[50vh] lg:min-h-[100vh]">
+          <Masonry gutter="2rem" className="mt-8 min-h-[100vh]">
             {certificates
               .filter((certificates) => certificates.category.includes(category))
               .map((certificates, index) => (
-                <div key={index} className="grid-item w-100 bg-white dark:bg-transparent p-6 border-[2px] border-white dark:border-[#212425] shadow-lg shadow-[#b7b7b7] dark:shadow-none rounded-lg">
-                  <div className="overflow-hidden shadow-xl" onClick={() => setModalData(certificates)}>
+                <div key={index} className="grid-item w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] shadow-md shadow-[#b7b7b7] dark:shadow-none rounded-lg">
+                  <div className="overflow-hidden" onClick={() => setModalData(certificates)}>
                     <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 h-auto" src={process.env.PUBLIC_URL + certificates.image} alt={certificates.title} />
                   </div>
                   <span className="pt-5 text-[0.85rem] block text-black dark:text-[#A6A6A6]"> {certificates.category} </span>
