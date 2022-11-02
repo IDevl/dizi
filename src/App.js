@@ -9,6 +9,7 @@ import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects.jsx";
 import Certificates from "./pages/certificates/certificates.jsx";
 import Modal from "./pages/modal/modal";
+import Wave from "./pages/wave/wave";
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
@@ -23,11 +24,11 @@ export default function App() {
 
   const setModalData = (modalData) => {
     setSelectedModalData(modalData);
-  }
+  };
 
   const unsetModalData = () => {
     setSelectedModalData(null);
-  }
+  };
 
   useEffect(() => {
     if (selectedModalData) {
@@ -56,10 +57,11 @@ export default function App() {
         once: true,
         disable: "mobile",
       });
-  
-      setTimeout(() => { ResetAOS(); }, 50);
-    }, 50);
 
+      setTimeout(() => {
+        ResetAOS();
+      }, 50);
+    }, 50);
   }, [location.pathname]);
 
   function ResetAOS() {
@@ -74,7 +76,8 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0">
+      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0 relative">
+        <Wave />
         {loader && <Loader />}
         <HeaderPC />
         <div className="lg:container grid grid-cols-12 md:gap-10 justify-between lg:mt-[200px]">

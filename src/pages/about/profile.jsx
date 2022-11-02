@@ -14,22 +14,22 @@ export default function Profile() {
           <h3 className="mb-3 inline-block bg-white dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]"> Developer </h3>
           <div className="flex justify-center space-x-3">
             <a href="https://www.linkedin.com/in/jefferson-dc/" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-xl">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </span>
             </a>
             <a href="https://www.facebook.com/lNyep" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-xl">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
                 <FontAwesomeIcon icon={faFacebookF} />
               </span>
             </a>
             <a href="https://www.behance.net/jeffdelacruz4" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-xl">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
                 <FontAwesomeIcon icon={faBehance} />
               </span>
             </a>
             <a href="https://twitter.com/jeppdc" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-xl">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
                 <FontAwesomeIcon icon={faTwitter} />
               </span>
             </a>
