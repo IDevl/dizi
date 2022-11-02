@@ -37,8 +37,8 @@ export default function Certificates({ setModalData }) {
             {certificates
               .filter((certificates) => certificates.category.includes(category))
               .map((certificates, index) => (
-                <div key={index} className="grid-item w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] shadow-md shadow-[#b7b7b7] dark:shadow-none rounded-lg">
-                  <div className="overflow-hidden" onClick={() => setModalData(certificates)}>
+                <div key={index} className="grid-item w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] shadow-md shadow-[#b7b7b7] dark:shadow-none rounded-lg" onClick={() => setModalData(certificates)}>
+                  <div className="overflow-hidden">
                     <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 h-auto" src={process.env.PUBLIC_URL + certificates.image} alt={certificates.title} />
                   </div>
                   <span className="pt-5 text-[0.85rem] block text-black dark:text-[#A6A6A6]"> {certificates.category} </span>
