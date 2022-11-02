@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
-import CountUp from 'react-countup';
+import ProgressBar from "./progress-bar";
 
 const education = [
   {
@@ -37,42 +37,27 @@ const skills = [
   {
     name: "Web Development",
     percentage: 92,
-    style: {
-      backgroundColor: "#a92bff",
-      width: "92%",
-    },
+    backgroundColor: "#a92bff",
   },
   {
     name: "Web Design",
     percentage: 86,
-    style: {
-      backgroundColor: "#2b98ff",
-      width: "86%",
-    },
+    backgroundColor: "#2b98ff",
   },
   {
     name: "Problem Solving",
     percentage: 87,
-    style: {
-      backgroundColor: "#2bff7c",
-      width: "87%",
-    },
+    backgroundColor: "#2bff7c",
   },
   {
     name: "Consistency",
     percentage: 93,
-    style: {
-      backgroundColor: "#f6ff2b",
-      width: "93%",
-    },
+    backgroundColor: "#f6ff2b",
   },
   {
     name: "Leadership",
     percentage: 88,
-    style: {
-      backgroundColor: "#ff2b2b",
-      width: "88%",
-    },
+    backgroundColor: "#ff2b2b",
   },
 ];
 
@@ -127,16 +112,8 @@ export default function Resume() {
           <div className="col-span-1">
             <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Working Skills </h4>
 
-            {skills.map((skills) => (
-              <div className="mb-5">
-                <div className="flex justify-between mb-1">
-                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.name} </span>
-                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> <CountUp enableScrollSpy="true" start={0} end={skills.percentage} />% </span>
-                </div>
-                <div className="w-full h-2.5 bg-[#F3F6F6] dark:bg-[#1c1c1c] mt-[10px]">
-                  <div className="h-2.5" style={skills.style}></div>
-                </div>
-              </div>
+            {skills.map((skills, index) => (
+              <ProgressBar key={index} name={skills.name} bgcolor={skills.backgroundColor} completed={skills.percentage} />
             ))}
           </div>
 
