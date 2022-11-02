@@ -37,9 +37,9 @@ export default function Projects({ setModalData }) {
             {projects
               .filter((projects) => projects.category.includes(category))
               .map((projects, index) => (
-                <div key={index} transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] shadow-md shadow-[#b7b7b7] dark:shadow-none rounded-lg" onClick={() => setModalData(projects)}>
+                <div key={index} transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] shadow-md shadow-[#b7b7b7] dark:shadow-none rounded-lg cursor-pointer" onClick={() => setModalData(projects)}>
                   <div className="overflow-hidden">
-                    <img className="w-full cursor-pointer transition duration-[0.4s] hover:scale-110 h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
+                    <img className="w-full cursor-pointer h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
                   </div>
                   <span className="pt-5 text-[0.85rem] block text-black dark:text-[#A6A6A6]"> {projects.category} </span>
                   <h2 className="text-[1.2rem] font-[620] duration-300 text-black dark:text-white mt-1"> {projects.title} </h2>
