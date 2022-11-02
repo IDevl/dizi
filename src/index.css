@@ -142,7 +142,7 @@ html[class='dark'] {
     --scrollbar-color: white;
 }
 
-html[class=''] {
+html {
     --scrollbar-color: black;
 }
 

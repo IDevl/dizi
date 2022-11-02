@@ -74,7 +74,7 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[100px] lg:mb-[0px] lg:mb-0">
+      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0">
         {loader && <Loader />}
         <HeaderPC />
         <div className="lg:container grid grid-cols-12 md:gap-10 justify-between lg:mt-[200px]">
