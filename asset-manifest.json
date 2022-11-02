@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dizi/static/css/main.30ccfda2.css",
-    "main.js": "/dizi/static/js/main.0eb3cfdb.js",
+    "main.css": "/dizi/static/css/main.fbc7dc02.css",
+    "main.js": "/dizi/static/js/main.b4bdb1eb.js",
     "static/media/slick.svg": "/dizi/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/dizi/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/dizi/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/dizi/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dizi/index.html",
     "static/media/wave.svg": "/dizi/static/media/wave.d4e416eb61864826dd3d.svg",
-    "main.30ccfda2.css.map": "/dizi/static/css/main.30ccfda2.css.map",
-    "main.0eb3cfdb.js.map": "/dizi/static/js/main.0eb3cfdb.js.map"
+    "main.fbc7dc02.css.map": "/dizi/static/css/main.fbc7dc02.css.map",
+    "main.b4bdb1eb.js.map": "/dizi/static/js/main.b4bdb1eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ccfda2.css",
-    "static/js/main.0eb3cfdb.js"
+    "static/css/main.fbc7dc02.css",
+    "static/js/main.b4bdb1eb.js"
   ]
 }
