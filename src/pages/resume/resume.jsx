@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import CountUp from 'react-countup';
 
 const education = [
   {
@@ -35,7 +36,7 @@ const experiences = [
 const skills = [
   {
     name: "Web Development",
-    percentage: "92%",
+    percentage: 92,
     style: {
       backgroundColor: "#a92bff",
       width: "92%",
@@ -43,7 +44,7 @@ const skills = [
   },
   {
     name: "Web Design",
-    percentage: "86%",
+    percentage: 86,
     style: {
       backgroundColor: "#2b98ff",
       width: "86%",
@@ -51,7 +52,7 @@ const skills = [
   },
   {
     name: "Problem Solving",
-    percentage: "87%",
+    percentage: 87,
     style: {
       backgroundColor: "#2bff7c",
       width: "87%",
@@ -59,7 +60,7 @@ const skills = [
   },
   {
     name: "Consistency",
-    percentage: "93%",
+    percentage: 93,
     style: {
       backgroundColor: "#f6ff2b",
       width: "93%",
@@ -67,7 +68,7 @@ const skills = [
   },
   {
     name: "Leadership",
-    percentage: "88%",
+    percentage: 88,
     style: {
       backgroundColor: "#ff2b2b",
       width: "88%",
@@ -130,7 +131,7 @@ export default function Resume() {
               <div className="mb-5">
                 <div className="flex justify-between mb-1">
                   <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.name} </span>
-                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> {skills.percentage} </span>
+                  <span className="font-semibold text-black dark:text-[#A6A6A6]"> <CountUp enableScrollSpy="true" start={0} end={skills.percentage} />% </span>
                 </div>
                 <div className="w-full h-2.5 bg-[#F3F6F6] dark:bg-[#1c1c1c] mt-[10px]">
                   <div className="h-2.5" style={skills.style}></div>
