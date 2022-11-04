@@ -67,7 +67,7 @@ export default function App() {
       }, 50);
     }, 50);
 
-    ReactGA.send(location.pathname);
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
 
   }, [location.pathname]);
 
