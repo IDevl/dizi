@@ -16,6 +16,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactGA from "react-ga";
 
+ReactGA.initialize("G-YTEG7EMDSR");
+
 export default function App() {
   const [loader, setLoader] = useState(null);
 
@@ -64,8 +66,8 @@ export default function App() {
       }, 50);
     }, 50);
 
-    ReactGA.initialize("G-YTEG7EMDSR");
     ReactGA.pageview(window.location.pathname + window.location.search);
+
   }, [location.pathname]);
 
   function ResetAOS() {
