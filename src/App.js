@@ -14,16 +14,17 @@ import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 ReactGA.initialize("G-YTEG7EMDSR");
 
 export default function App() {
+
+  const location = useLocation();
+
   const [loader, setLoader] = useState(null);
 
   const [selectedModalData, setSelectedModalData] = useState(null);
-
-  const location = useLocation();
 
   const setModalData = (modalData) => {
     setSelectedModalData(modalData);
@@ -66,7 +67,7 @@ export default function App() {
       }, 50);
     }, 50);
 
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send(location.pathname);
 
   }, [location.pathname]);
 
