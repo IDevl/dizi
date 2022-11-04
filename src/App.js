@@ -14,6 +14,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReactGA from "react-ga";
 
 export default function App() {
   const [loader, setLoader] = useState(null);
@@ -62,6 +63,9 @@ export default function App() {
         ResetAOS();
       }, 50);
     }, 50);
+
+    ReactGA.initialize("G-YTEG7EMDSR");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, [location.pathname]);
 
   function ResetAOS() {
