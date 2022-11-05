@@ -37,7 +37,7 @@ export default function Projects({ setModalData }) {
             {projects
               .filter((projects) => projects.category.includes(category))
               .map((projects, index) => (
-                <div key={index} transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-100 bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] rounded-lg cursor-pointer" onClick={() => setModalData(projects)}>
+                <div key={index} transition={{ duration: 0.2 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="w-full bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] rounded-lg cursor-pointer" onClick={() => setModalData(projects)}>
                   <div className="overflow-hidden">
                     <img className="w-full cursor-pointer h-auto" src={process.env.PUBLIC_URL + projects.image} alt={projects.title} />
                   </div>
