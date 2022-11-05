@@ -125,7 +125,7 @@
 .slide-active {
     pointer-events: all;
     z-index: 999999;
-    filter: contrast(1.5);
+    filter: contrast(1);
 }
 
 .slick-slide img {
