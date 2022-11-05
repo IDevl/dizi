@@ -3,7 +3,7 @@ import { faXmarkCircle, faFileLines, faMagnifyingGlass } from "@fortawesome/free
 
 export default function Modal({ modalData, unsetModalData }) {
   return (
-    <div className="fixed inset-0 flex justify-center z-[99999999] bg-[#000000c2] px-5 py-20">
+    <div className="fixed inset-0 flex justify-center z-[99999999] bg-[#000000c2] px-5 py-20 overflow-y-auto">
       <div className="max-w-[700px] relative m-auto rounded-[10px] bg-white dark:bg-[#323232] py-6 pr-3 w-auto">
         <FontAwesomeIcon className="absolute top-[-2.4rem] right-[0rem] lg:top-[-4rem] text-white text-[2rem] lg:text-[3rem] duration-[400ms] hover:opacity-[0.6] cursor-pointer" icon={faXmarkCircle} onClick={() => unsetModalData()} />
         <div className="modal p-5 sm:p-8 max-w-[800px] max-h-[600px] overflow-y-scroll">
