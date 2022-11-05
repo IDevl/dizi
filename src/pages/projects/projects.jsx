@@ -14,14 +14,10 @@ export default function Projects({ setModalData }) {
     <>
       <div className="container lg:pt-10 pb-10 px-2 sm:px-5 md:px-10">
         <h2 className="page-title-headline text-black dark:text-[white] flex items-start gap-3.5 flex-col md:flex-row md:items-center md:gap-7 after:bg-black dark:after:bg-gradient-to-l from-[#df0000] to-[#550089]">Projects</h2>
-        <ul className="mt-8 flex w-full justify-start md:justify-end flex-wrap font-[500] text-white text-[0.85rem] sm:text-[1rem]">
+        <ul className="mt-8 flex w-full justify-start md:justify-end flex-wrap font-[500] text-white text-[0.8rem] sm:text-[0.95rem]">
           <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Dev")}>
             {" "}
             All{" "}
-          </li>
-          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Game Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Game Dev")}>
-            {" "}
-            Game{" "}
           </li>
           <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Website Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Website Dev")}>
             {" "}
@@ -29,11 +25,19 @@ export default function Projects({ setModalData }) {
           </li>
           <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Web Application Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Web Application Dev")}>
             {" "}
-            Web Application{" "}
+            Web App{" "}
+          </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Game Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Game Dev")}>
+            {" "}
+            Game{" "}
+          </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Software Dev" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Software Dev")}>
+            {" "}
+            Software{" "}
           </li>
         </ul>
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
-          <Masonry gutter="2rem" className="mt-8 min-h-[100vh]">
+          <Masonry gutter="2rem" className="mt-8">
             {projects
               .filter((projects) => projects.category.includes(category))
               .map((projects, index) => (
