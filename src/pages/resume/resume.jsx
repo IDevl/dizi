@@ -23,13 +23,13 @@ const experiences = [
     year: "JAN 2021 - NOV 2022",
     name: "Web Development",
     location: "Exceed Digital Solutions",
-    description: ["Integrated, modified, and developed responsive ecommerce and company websites with WordPress and Shopify.", "Coordinates with the team to resolve conflicts, prioritize needs and develop content criteria of a website."],
+    description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify.", "Coordinates with the team to resolve conflicts, prioritize needs and develop content criteria of a website using CMS tools and platforms.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
   },
   {
     year: "APR 2022 - JUL 2022",
     name: "Internship",
     location: "Exceed Digital Solutions",
-    description: ["Practiced of scripting languages, primarily Javascript frameworks.", "Trained to use management tools, content creation tools, applications, and digital media.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
+    description: ["Practiced of scripting languages, primarily jQuery and JavaScript frameworks and libraries to meet all the needed functionalities of a website.", "Trained to use management tools, content creation tools, applications, and digital media."],
   },
 ];
 
