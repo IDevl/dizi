@@ -119,7 +119,7 @@
 .slick-slide {
     pointer-events: none;
     filter: contrast(0);
-    transition: 600ms;
+    transition: 300ms;
 }
 
 .slide-active {

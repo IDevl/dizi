@@ -17,7 +17,7 @@ export default function About() {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     cssEase: "linear",
     speed: 400,
     slidesToShow: 3,
