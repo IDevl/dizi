@@ -74,22 +74,6 @@ export default function Resume() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div>
             <div className="flex items-center space-x-3 mb-5">
-              <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faGraduationCap} />
-              <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Education </h4>
-            </div>
-            {education.map((education) => (
-              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
-                <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
-                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
-                <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
-                {education.description.map((description) => (
-                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
-                ))}
-              </div>
-            ))}
-          </div>
-          <div>
-            <div className="flex items-center space-x-3 mb-5">
               <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faBriefcase} />
               <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Experience </h4>
             </div>
@@ -99,6 +83,22 @@ export default function Resume() {
                 <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
                 <p className="text-[1rem] text-black dark:text-white"> {experiences.location} </p>
                 {experiences.description.map((description) => (
+                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className="flex items-center space-x-3 mb-5">
+              <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[30px]" icon={faGraduationCap} />
+              <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Education </h4>
+            </div>
+            {education.map((education) => (
+              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+                <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
+                <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
+                {education.description.map((description) => (
                   <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
                 ))}
               </div>
