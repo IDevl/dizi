@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle, faFileLines, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import FsLightbox from "fslightbox-react";
+import { useState } from "react";
 
 export default function Modal({ modalData, unsetModalData }) {
+  const [toggler, setToggler] = useState(true);
   return (
     <div className="fixed inset-0 flex justify-center z-[99999999] bg-[#000000c2] px-5 py-20 overflow-y-auto">
       <div className="max-w-[700px] relative m-auto rounded-[10px] bg-white dark:bg-[#323232] py-6 pr-3 w-auto">
@@ -35,9 +38,12 @@ export default function Modal({ modalData, unsetModalData }) {
             </>
           )}
 
-          <div className="relative my-10 overflow-hidden rounded-[20px] flex items-center justify-center">
+          <div className="relative my-10 overflow-hidden rounded-[20px] flex items-center justify-center cursor-pointer" onClick={() => setToggler(!toggler)}>
             <img className="w-full rounded-[20px]" src={process.env.PUBLIC_URL + modalData.image} alt={modalData.title} />
           </div>
+
+          <FsLightbox toggler={toggler} sources={[process.env.PUBLIC_URL + modalData.image]} />
+
           {modalData.link && (
             <div className="flex items-center justify-center w-full">
               <a className="bg-[#FCECDD] dark:bg-white hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] text-black dark:hover:text-white text-[1.1rem] font-[600] px-6 py-1.5 drop-shadow-lg rounded-lg duration-[0.4s]" href={modalData.link} target="_blank" rel="noreferrer">

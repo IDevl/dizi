@@ -18,9 +18,9 @@
     }
 
     body {
-        margin: 0;
+        margin: 0 !important;
         line-height: inherit;
-        background-color: black;
+        background-color: transparent;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
@@ -54,7 +54,7 @@
         transition: 300ms;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
         .menu-item {
             width: 3.5rem;
             height: 3.5rem;

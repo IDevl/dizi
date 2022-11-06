@@ -19,7 +19,6 @@ import ReactGA from "react-ga4";
 ReactGA.initialize("G-YTEG7EMDSR");
 
 export default function App() {
-
   const location = useLocation();
 
   const [loader, setLoader] = useState(null);
@@ -36,8 +35,10 @@ export default function App() {
 
   useEffect(() => {
     if (selectedModalData) {
+      document.getElementById("main-container").style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
       document.body.style.overflow = "hidden";
     } else {
+      document.getElementById("main-container").style.paddingRight = "";
       document.body.style.overflow = "auto";
     }
   }, [selectedModalData]);
@@ -47,9 +48,11 @@ export default function App() {
 
     unsetModalData();
 
+    document.getElementById("main-container").style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
     document.body.style.overflow = "hidden";
 
     setTimeout(() => {
+      document.getElementById("main-container").style.paddingRight = "";
       document.body.style.overflow = "auto";
       setLoader(false);
     }, 1800);
@@ -68,7 +71,6 @@ export default function App() {
     }, 50);
 
     ReactGA.send({ hitType: "pageview", page: location.pathname });
-
   }, [location.pathname]);
 
   function ResetAOS() {
@@ -83,7 +85,7 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0 relative">
+      <div id="main-container" className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0 relative">
         <Wave />
         {loader && <Loader />}
         <HeaderPC />
@@ -107,12 +109,11 @@ export default function App() {
           </div>
         </div>
 
-        {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} />}
-
         {/* <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} /> */}
 
         <HeaderMobile />
       </div>
+      {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} />}
     </>
   );
 }

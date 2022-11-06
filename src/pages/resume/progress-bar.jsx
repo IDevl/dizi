@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function ProgressBar(props) {
-  const { bgcolor, completed, name } = props;
+  const { completed, name } = props;
 
   const [value, setValue] = useState(0);
 
