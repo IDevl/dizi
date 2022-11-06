@@ -13,7 +13,7 @@ export default function Navbar() {
         <ul className="flex gap-3.5">
           <li>
             {" "}
-            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089]", location.pathname === "/" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089]")} to="./">
+            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./">
               <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faUser} />
               </span>{" "}
@@ -22,7 +22,7 @@ export default function Navbar() {
           </li>
           <li>
             {" "}
-            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089]", location.pathname === "/resume" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089]")} to="./resume">
+            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/resume" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./resume">
               <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faFileLines} />
               </span>{" "}
@@ -31,7 +31,7 @@ export default function Navbar() {
           </li>
           <li>
             {" "}
-            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089]", location.pathname === "/projects" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089]")} to="./projects">
+            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/projects" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./projects">
               <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faBriefcase} />
               </span>{" "}
@@ -40,7 +40,7 @@ export default function Navbar() {
           </li>
           <li>
             {" "}
-            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089]", location.pathname === "/certificates" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089]")} to="./certificates">
+            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/certificates" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./certificates">
               <span className="text-xl mb-1">
                 <FontAwesomeIcon icon={faCertificate} />
               </span>{" "}

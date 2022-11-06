@@ -11,7 +11,7 @@ export default function Profile() {
         </a>
         <div className="pt-[100px] pb-8">
           <h2 className="mt-6 mb-1 text-[26px] font-semibold text-black dark:text-white"> Jefferson Dela Cruz </h2>
-          <h3 className="mb-3 inline-block bg-[#F3F6F6] dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-black dark:text-[#A6A6A6]"> Developer </h3>
+          <h3 className="mb-3 inline-block bg-[#F3F6F6] dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-black dark:text-[#A6A6A6] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]"> Developer </h3>
           <div className="flex justify-center space-x-3">
             <a href="https://www.linkedin.com/in/jefferson-dc/" target="_blank" rel="noreferrer">
               <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
@@ -35,7 +35,7 @@ export default function Profile() {
             </a>
           </div>
 
-          <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+          <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
             <div className="flex items-start border-b border-[#4c4c4c] pb-2.5">
               <a href="tel:+639384571460" target="_blank" rel="noreferrer" className="text-black dark:hover:text-white dark:text-[#E93B81] bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faMobileScreenButton} />
