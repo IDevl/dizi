@@ -46,7 +46,7 @@ export default function Modal({ modalData, unsetModalData }) {
 
           {modalData.link && (
             <div className="flex items-center justify-center w-full">
-              <a className="bg-[#FCECDD] dark:bg-white hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] text-black dark:hover:text-white text-[1.1rem] font-[600] px-6 py-1.5 drop-shadow-lg rounded-lg duration-[0.4s]" href={modalData.link} target="_blank" rel="noreferrer">
+              <a className="bg-[#FCECDD] dark:bg-white hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] text-black dark:hover:text-white text-[1.1rem] font-[600] px-6 py-1.5 drop-shadow-lg rounded-lg duration-[0.4s] hover:shadow-none" href={modalData.link} target="_blank" rel="noreferrer">
                 {" "}
                 View{" "}
               </a>
