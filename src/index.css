@@ -118,7 +118,7 @@
 
 .slick-slide {
     pointer-events: none;
-    filter: contrast(0);
+    filter: contrast(1);
     transition: 300ms;
 }
 

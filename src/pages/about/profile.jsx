@@ -11,25 +11,25 @@ export default function Profile() {
         </a>
         <div className="pt-[100px] pb-8">
           <h2 className="mt-6 mb-1 text-[26px] font-semibold text-black dark:text-white"> Jefferson Dela Cruz </h2>
-          <h3 className="mb-3 inline-block bg-white dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-[#A6A6A6]"> Developer </h3>
+          <h3 className="mb-3 inline-block bg-[#F3F6F6] dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg text-black dark:text-[#A6A6A6]"> Developer </h3>
           <div className="flex justify-center space-x-3">
             <a href="https://www.linkedin.com/in/jefferson-dc/" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </span>
             </a>
             <a href="https://www.facebook.com/lNyep" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faFacebookF} />
               </span>
             </a>
             <a href="https://www.behance.net/jeffdelacruz4" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faBehance} />
               </span>
             </a>
             <a href="https://twitter.com/jeppdc" target="_blank" rel="noreferrer">
-              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-md">
+              <span className="text-black dark:text-white bg-[#F3F6F6] dark:bg-[#1D1D1D] min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-t from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faTwitter} />
               </span>
             </a>
@@ -37,7 +37,7 @@ export default function Profile() {
 
           <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
             <div className="flex items-start border-b border-[#4c4c4c] pb-2.5">
-              <a href="tel:+639384571460" target="_blank" rel="noreferrer" className="text-black dark:hover:text-white dark:text-[#E93B81] bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-md">
+              <a href="tel:+639384571460" target="_blank" rel="noreferrer" className="text-black dark:hover:text-white dark:text-[#E93B81] bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faMobileScreenButton} />
               </a>
               <div className="text-left ml-2.5">
@@ -46,7 +46,7 @@ export default function Profile() {
               </div>
             </div>
             <div className="flex items-start border-b border-[#4c4c4c] mt-5 pb-2.5">
-              <a href="mailto: jbdelacruz411@gmail.com" className="text-black dark:hover:text-white dark:text-[#2B98FF] bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-md">
+              <a href="mailto: jbdelacruz411@gmail.com" className="text-black dark:hover:text-white dark:text-[#2B98FF] bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <div className="text-left ml-2.5">
@@ -55,7 +55,7 @@ export default function Profile() {
               </div>
             </div>
             <div className="flex items-start border-b border-[#4c4c4c] mt-5 pb-2.5">
-              <span className="text-black dark:text-[#F6FF2B] dark:hover:text-white bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-md">
+              <span className="text-black dark:text-[#F6FF2B] dark:hover:text-white bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faLocationDot} />
               </span>
               <div className="text-left ml-2.5">
@@ -64,7 +64,7 @@ export default function Profile() {
               </div>
             </div>
             <div className="flex items-start border-b border-[#4c4c4c] mt-5 pb-2.5">
-              <a href="https://www.funimada.com/assets/images/cards/big/link-2.gif" target="_blank" rel="noreferrer" className="text-black dark:text-[#A92BFF] dark:hover:text-white bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-md">
+              <a href="https://www.funimada.com/assets/images/cards/big/link-2.gif" target="_blank" rel="noreferrer" className="text-black dark:text-[#A92BFF] dark:hover:text-white bg-[#F3F6F6] dark:bg-black min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center rounded hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#8d0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <FontAwesomeIcon icon={faCalendarDays} />
               </a>
               <div className="text-left ml-2.5">
@@ -76,7 +76,7 @@ export default function Profile() {
         </div>
 
         <div className="w-full flex justify-center pb-8">
-          <a href="https://drive.google.com/file/d/1vVdvDbu4gEVzSIj7LsGw_G7dLuy6Nu1H/view?usp=sharing" target="_blank" rel="noreferrer" download className="text-black dark:text-white text-[18px] bg-[#FCECDD] hover:bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] px-5 py-3 rounded-xl bg-[length:100%_100%] hover:bg-[length:300%_100%] duration-[0.4s] shadow-xl">
+          <a href="https://drive.google.com/file/d/1vVdvDbu4gEVzSIj7LsGw_G7dLuy6Nu1H/view?usp=sharing" target="_blank" rel="noreferrer" download className="text-black dark:text-white text-[18px] bg-[#FCECDD] hover:bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] px-5 py-3 rounded-lg bg-[length:100%_100%] hover:bg-[length:300%_100%] duration-[0.4s] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
             <FontAwesomeIcon icon={faDownload} /> Download CV
           </a>
         </div>

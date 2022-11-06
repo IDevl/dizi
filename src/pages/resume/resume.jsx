@@ -78,7 +78,7 @@ export default function Resume() {
               <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Experience </h4>
             </div>
             {experiences.map((experiences) => (
-              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {experiences.year} </span>
                 <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
                 <p className="text-[1rem] text-black dark:text-white"> {experiences.location} </p>
@@ -94,7 +94,7 @@ export default function Resume() {
               <h4 className="text-[1.6rem] text-black dark:text-white font-[500]"> Education </h4>
             </div>
             {education.map((education) => (
-              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent">
+              <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
                 <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
                 <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
@@ -121,7 +121,7 @@ export default function Resume() {
             <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Knowledges </h4>
             <div className="flex gap-3.5 flex-wrap">
               {knowledges.map((knowledges) => (
-                <button className="bg-[#ededed] dark:bg-[#1C1C1C] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-black dark:text-[#b7b7b7] text-[0.9rem] font-[500] dark:hover:text-white px-3 py-2 rounded-lg duration-500 shadow-md">{knowledges}</button>
+                <button className="bg-[#ededed] dark:bg-[#1C1C1C] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-black dark:text-[#b7b7b7] text-[0.9rem] font-[500] dark:hover:text-white px-3 py-2 rounded-lg duration-500 shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">{knowledges}</button>
               ))}
             </div>
           </div>
