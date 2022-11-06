@@ -121,7 +121,7 @@ export default function Resume() {
             <h4 className="text-[1.6rem] text-black dark:text-white font-[500] mb-6"> Knowledges </h4>
             <div className="flex gap-3.5 flex-wrap">
               {knowledges.map((knowledges) => (
-                <button className="bg-[#ededed] dark:bg-[#1C1C1C] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-black dark:text-[#b7b7b7] text-[0.9rem] font-[500] dark:hover:text-white px-3 py-2 rounded-lg duration-500 shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">{knowledges}</button>
+                <span className="bg-[#ededed] dark:bg-[#1C1C1C] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-black dark:text-[#b7b7b7] text-[0.9rem] font-[500] dark:hover:text-white px-3 py-2 rounded-lg duration-300 cursor-pointer shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)] hover:shadow-none">{knowledges}</span>
               ))}
             </div>
           </div>

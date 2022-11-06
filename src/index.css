@@ -138,12 +138,12 @@
     width: 0.6em;
 }
 
-html[class='dark'] {
-    --scrollbar-color: white;
-}
-
 html {
     --scrollbar-color: black;
+}
+
+html[class='dark'] {
+    --scrollbar-color: white;
 }
 
 .modal::-webkit-scrollbar-thumb {
