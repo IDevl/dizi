@@ -32,21 +32,21 @@ export default function Modal({ modalData, unsetModalData }) {
               </div>
               <div className="flex gap-2.5 flex-wrap mt-6 mb-10">
                 {modalData.skills.map((skills) => (
-                  <button className="border-[1px] border-black hover:border-[#F4C9A5] dark:border-[#bdbdbd] dark:hover:border-[#9d00ff] hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] text-[0.8rem] font-[500] text-black dark:text-white px-4 py-1.5 rounded-2xl duration-500 shadow-lg">{skills}</button>
+                  <button className="hover:bg-[#F4C9A5] dark:hover:bg-[#9d00ff] dark:bg-white text-[0.8rem] font-[500] text-black dark:text-black dark:hover:text-white px-4 py-1.5 rounded-2xl duration-200 shadow-[0px_4px_4px_rgba(0,0,0,0.15)] hover:shadow-none">{skills}</button>
                 ))}
               </div>
             </>
           )}
 
-          <div className="relative my-10 overflow-hidden rounded-[20px] flex items-center justify-center cursor-pointer" onClick={() => setToggler(!toggler)}>
+          <div className="relative mt-10 overflow-hidden rounded-[20px] flex items-center justify-center cursor-pointer" onClick={() => setToggler(!toggler)}>
             <img className="w-full rounded-[20px]" src={process.env.PUBLIC_URL + modalData.image} alt={modalData.title} />
           </div>
 
           <FsLightbox toggler={toggler} sources={[process.env.PUBLIC_URL + modalData.image]} />
 
           {modalData.link && (
-            <div className="flex items-center justify-center w-full">
-              <a className="bg-[#FCECDD] dark:bg-white hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] text-black dark:hover:text-white text-[1.1rem] font-[600] px-6 py-1.5 drop-shadow-lg rounded-lg duration-[0.4s] hover:shadow-none" href={modalData.link} target="_blank" rel="noreferrer">
+            <div className="mt-10 flex items-center justify-center w-full">
+              <a className="bg-white hover:bg-[#F4C9A5] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] text-black dark:hover:text-white text-[1.1rem] font-[600] px-6 py-1.5 rounded-lg duration-[0.4s] shadow-[0px_4px_4px_rgba(0,0,0,0.15)] hover:shadow-none" href={modalData.link} target="_blank" rel="noreferrer">
                 {" "}
                 View{" "}
               </a>
