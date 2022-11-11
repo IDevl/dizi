@@ -1,27 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle, faFileLines, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import FsLightbox from "fslightbox-react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
-export default function Modal({ modalData, unsetModalData }) {
-  const [toggler, setToggler] = useState(true);
-
+export default function Modal({ modalData, unsetModalData, setModalImage, modalImage }) {
   const handleClickOutside = (e) => {
     const outerDiv = document.getElementById("outer-div");
-
     if (e.target === outerDiv) {
       unsetModalData();
     }
   };
 
+
   useEffect(() => {
     document.addEventListener("keydown", (e) => {
-      const fslightbox = document.getElementsByClassName("fslightbox-container")[0];
-      if (e.key === "Escape" && !fslightbox) {
-        unsetModalData();
+      const outerDiv = document.getElementById("image-outer-div");
+      if (e.key === "Escape") {
+        if (!outerDiv) {
+          unsetModalData();
+        }
       }
     });
-  }, []);
+  }, [modalImage]);
 
   return (
     <div id="outer-div" className="fixed inset-0 flex justify-center z-[99999999] bg-[#000000c2] px-5 py-20 overflow-y-auto" onClick={(e) => handleClickOutside(e)}>
@@ -56,11 +55,9 @@ export default function Modal({ modalData, unsetModalData }) {
             </>
           )}
 
-          <div className="relative mt-10 overflow-hidden rounded-[20px] flex items-center justify-center cursor-pointer" onClick={() => setToggler(!toggler)}>
+          <div className="relative mt-10 overflow-hidden rounded-[20px] flex items-center justify-center cursor-pointer" onClick={() => setModalImage(modalData.image)}>
             <img className="w-full rounded-[20px]" src={process.env.PUBLIC_URL + modalData.image} alt={modalData.title} />
           </div>
-
-          <FsLightbox toggler={toggler} sources={[process.env.PUBLIC_URL + modalData.image]} />
 
           {modalData.link && (
             <div className="mt-10 flex items-center justify-center w-full">
