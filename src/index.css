@@ -161,3 +161,7 @@ html[class='dark'] {
 *:focus {
     outline: none;
 }
+
+.fslightbox-open {
+    overflow: auto !important;
+}
