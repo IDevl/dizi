@@ -19,6 +19,7 @@ import ReactGA from "react-ga4";
 ReactGA.initialize("G-YTEG7EMDSR");
 
 export default function App() {
+
   const location = useLocation();
 
   const [loader, setLoader] = useState(null);
