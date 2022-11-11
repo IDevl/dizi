@@ -56,8 +56,13 @@
 
     @media screen and (max-width: 1023px) {
         .menu-item {
-            width: 3.5rem;
-            height: 3.5rem;
+            width: 5rem;
+            height: 3rem;
+            padding-top: 3px;
+            border-radius: 5px;
+        }
+        .menu-item {
+            font-size: .55rem !important;
         }
     }
 
