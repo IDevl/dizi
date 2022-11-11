@@ -85,7 +85,7 @@ export default function App() {
 
   return (
     <>
-      <div id="main-container" className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[96px] lg:mb-[0px] lg:mb-0 relative">
+      <div id="main-container" className="min-h-screen bg-[#DEE7EC] dark:bg-[#111111] lg:bg-[#DEE7EC] dark:lg:bg-[#252527] bg-no-repeat bg-center bg-cover bg-fixed lg:pb-16 w-full mb-[0px] lg:mb-0 relative">
         <Wave />
         {loader && <Loader />}
         <HeaderPC />
