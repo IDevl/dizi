@@ -1,20 +1,6 @@
 import "./cube.scss";
 import Cube from "react-3d-cube";
-import { useEffect } from "react";
-
 export default function LogoCube() {
-  const cube = document.querySelector("._cube_bssuh_1");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        cube.classList.add("square-animation");
-      }
-    });
-  });
-
-  useEffect(() => {
-    observer.observe(document.querySelector(".stage-cube-container"));
-  }, [observer]);
 
   return (
     <div className="my-[120px] min-h-[150px]">

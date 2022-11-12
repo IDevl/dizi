@@ -17,7 +17,7 @@ export default function About() {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     speed: 400,
     slidesToShow: 3,
@@ -64,7 +64,7 @@ export default function About() {
           <div className="col-span-12 space-y-2.5">
             <p className="text-black dark:text-[#b3b3b3] leading-8 text-[1rem]">
               {" "}
-              Logical, solution-focused IT graduate with almost two years of experience in Web Development. An enthusiast in application and software development and currently looking for a new developer role to expand in-depth knowledge and skills in programming and development through developing real-world projects in the field of Information Technology.{" "}
+              Logical, solution-focused IT graduate with almost two years of experience in Web Development. An enthusiast in application and software development and currently looking for a new developer role to expand in-depth knowledge and skills in programming and development through developing real-world projects in the field of Information Technology.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function About() {
           <Slider ref={slider} className="my-4" {...settings}>
             {stack.map((stack) => (
               <div className="px-3 md:px-5" key={stack.id}>
-                <a className="flex items-center justify-center py-[1em]" target="_blank" rel="noreferrer">
+                <span className="flex items-center justify-center py-[1em]">
                   <img
                     src={stack.src}
                     alt={stack.id}
@@ -123,7 +123,7 @@ export default function About() {
                       currentTarget.src = "https://picsum.photos/100/100";
                     }}
                   />
-                </a>
+                </span>
               </div>
             ))}
           </Slider>

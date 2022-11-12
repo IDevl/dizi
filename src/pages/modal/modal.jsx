@@ -20,7 +20,7 @@ export default function Modal({ modalData, unsetModalData, setModalImage, modalI
         }
       }
     });
-  }, [modalImage]);
+  });
 
   return (
     <div id="outer-div" className="fixed inset-0 flex justify-center z-[99999999] bg-[#000000c2] px-5 py-20 overflow-y-auto" onClick={(e) => handleClickOutside(e)}>

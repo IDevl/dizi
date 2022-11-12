@@ -120,11 +120,9 @@ export default function App() {
             </div>
           </div>
         </div>
-
-        {/* <motion.div className="fixed top-0 bottom-0 right-0 origin-bottom w-0 xl:w-[5px] bg-gradient-to-t from-[#8d0000] to-[#550089]" style={{ scaleY: scrollYProgress }} /> */}
-
         <HeaderMobile />
       </div>
+
       {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} modalImage={selectedModalImage} setModalImage={setModalImage}/>}
 
       {selectedModalImage && <ModalImage modalImage={selectedModalImage} unsetModalImage={unsetModalImage} />}
