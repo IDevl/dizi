@@ -51,7 +51,7 @@ export default function Profile() {
               </a>
               <div className="text-left ml-2.5">
                 <p className="text-xs text-[#A6A6A6]"> Email </p>
-                <p className="text-black dark:text-white text-[0.95rem]"> jbdelacruz411@gmail.com </p>
+                <p className="text-black dark:text-white text-[0.95rem]"> jbdelacruz411 </p>
               </div>
             </div>
             <div className="flex items-start border-b border-[#4c4c4c] mt-5 pb-2.5">
