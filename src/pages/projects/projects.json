@@ -8,35 +8,6 @@
     "skills": ["Unity", "C#", "Firebase", "Photoshop", "Leantween"]
   },
   {
-    "image": "/img/projects/cgitechexam.png",
-    "title": "CRUD Web Application",
-    "category": "Web Application Development",
-    "description": "A basic web application that includes CRUD functions and authentication and developed within two days of timeframe using react.js, node.js, Express, and MongoDB frameworks.",
-    "link": "https://cgi-tech-jeffersondc.herokuapp.com/",
-    "skills": ["Javascript", "ReactJS", "NodeJS", "Express", "MongoDB", "MantineUI"]
-  },
-  {
-    "image": "/img/projects/fcc.png",
-    "title": "Four-Color Conjecture",
-    "category": "Game Development",
-    "description": "The four-color conjecture game proves that no more than four colors are required to color the vertices of any map so that no two adjacent vertices have the same color.",
-    "skills": ["Graphics.H", "C++", "Window Builder"]
-  },
-  {
-    "image": "/img/projects/beowulf.png",
-    "title": "Beowulf: The Game of All Time",
-    "category": "Game Development",
-    "description": "Beowulf: The Game of All Time is a 2D platformer game that covers the full story of the Old English epic poem in the tradition of Germanic heroic legend, Beowulf.",
-    "skills": ["GDevelop", "C++", "Javascript"]
-  },
-  {
-    "image": "/img/projects/aids.png",
-    "title": "AIDS: Automatic Intelligent Delivering System",
-    "category": "Software Development",
-    "description": "A software prototype that was used as a main controller for the (Raspberry Pi 3 Model B) as the mainboard in developing AIDS (Automatic Intelligent Delivery System). The system was automated and have a collision-avoidance system, distance limitation system, and track detection system for safe and efficient carrying of parcels in its proper place. The system also have an Application API so that users may choose to run it in autopilot mode or controller mode for manual use.",
-    "skills": ["Pygame", "Python", "Raspberry Pi"]
-  },
-  {
     "image": "/img/projects/jgcoffeeandbean.png",
     "title": "JG Coffee and Bean",
     "category": "Website Development",
@@ -149,12 +120,41 @@
     "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
   },
   {
+    "image": "/img/projects/cgitechexam.png",
+    "title": "CRUD Web Application",
+    "category": "Web Application Development",
+    "description": "A basic web application that includes CRUD functions and authentication and developed within two days of timeframe using react.js, node.js, Express, and MongoDB frameworks.",
+    "link": "https://cgi-tech-jeffersondc.herokuapp.com/",
+    "skills": ["Javascript", "ReactJS", "NodeJS", "Express", "MongoDB", "MantineUI", "Heroku"]
+  },
+  {
     "image": "/img/projects/sunsetflip.png",
     "title": "Sunset Flip Studio",
     "category": "Website Development",
     "description": "Sunset Flip Studio offers Photo & Video services on any events. Based in Las Pinas City, Philippines.",
     "link": "https://sunsetflip.ph",
     "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
+  },
+  {
+    "image": "/img/projects/fcc.png",
+    "title": "Four-Color Conjecture",
+    "category": "Game Development",
+    "description": "The four-color conjecture game proves that no more than four colors are required to color the vertices of any map so that no two adjacent vertices have the same color.",
+    "skills": ["Graphics.H", "C++", "Window Builder"]
+  },
+  {
+    "image": "/img/projects/beowulf.png",
+    "title": "Beowulf: The Game of All Time",
+    "category": "Game Development",
+    "description": "Beowulf: The Game of All Time is a 2D platformer game that covers the full story of the Old English epic poem in the tradition of Germanic heroic legend, Beowulf.",
+    "skills": ["GDevelop", "C++", "Javascript"]
+  },
+  {
+    "image": "/img/projects/aids.png",
+    "title": "AIDS: Automatic Intelligent Delivering System",
+    "category": "Software Development",
+    "description": "A software prototype that was used as a main controller for the (Raspberry Pi 3 Model B) as the mainboard in developing AIDS (Automatic Intelligent Delivery System). The system was automated and have a collision-avoidance system, distance limitation system, and track detection system for safe and efficient carrying of parcels in its proper place. The system also have an Application API so that users may choose to run it in autopilot mode or controller mode for manual use.",
+    "skills": ["Pygame", "Python", "Raspberry Pi"]
   },
   {
     "image": "/img/projects/suresolutions.png",
