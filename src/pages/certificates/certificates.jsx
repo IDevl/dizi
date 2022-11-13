@@ -33,7 +33,7 @@ export default function Certificates({ setModalData }) {
           </li>
         </ul>
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
-          <Masonry gutter="2rem" className="mt-8 min-h-[100vh]">
+          <Masonry gutter="2rem" className="mt-8">
             {certificates
               .filter((certificates) => certificates.category.includes(category))
               .map((certificates, index) => (

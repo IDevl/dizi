@@ -2,14 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle, faFileLines, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
-export default function Modal({ modalData, unsetModalData, setModalImage, modalImage }) {
+export default function Modal({ modalData, unsetModalData, setModalImage }) {
   const handleClickOutside = (e) => {
     const outerDiv = document.getElementById("outer-div");
     if (e.target === outerDiv) {
       unsetModalData();
     }
   };
-
 
   useEffect(() => {
     document.addEventListener("keydown", (e) => {

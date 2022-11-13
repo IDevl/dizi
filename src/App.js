@@ -8,6 +8,9 @@ import About from "./pages/about/about";
 import Resume from "./pages/resume/resume";
 import Projects from "./pages/projects/projects.jsx";
 import Certificates from "./pages/certificates/certificates.jsx";
+import Blogs from "./pages/blogs/blogs.jsx";
+import Blog from "./pages/blogs/blog.jsx";
+import NotFound from "./pages/not found/notfound.jsx";
 import Modal from "./pages/modal/modal";
 import ModalImage from "./pages/modal/modal-image";
 import Wave from "./pages/wave/wave";
@@ -46,14 +49,14 @@ export default function App() {
   };
 
   useEffect(() => {
-    if (selectedModalData) {
+    if (selectedModalData || selectedModalImage) {
       document.getElementById("main-container").style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
       document.body.style.overflow = "hidden";
     } else {
       document.getElementById("main-container").style.paddingRight = "";
       document.body.style.overflow = "auto";
     }
-  }, [selectedModalData]);
+  }, [selectedModalData, selectedModalImage]);
 
   useEffect(() => {
     setLoader(true);
@@ -109,12 +112,15 @@ export default function App() {
             <div data-aos="fade-left" className="aos-element">
               <Navbar />
             </div>
-            <div id="sub-container" data-aos="fade-up" className="aos-element lg:rounded-2xl bg-white dark:bg-[#111111] overflow-hidden">
+            <div id="sub-container" data-aos="fade-up" className="aos-element lg:rounded-2xl bg-white dark:bg-[#111111] overflow-hidden min-h-[100vh] flex flex-col justify-between">
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/projects" element={<Projects setModalData={setModalData} />} />
                 <Route path="/certificates" element={<Certificates setModalData={setModalData} setModalImage={setModalImage} />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/blogs/:slug" element={<Blog setModalImage={setModalImage}/>} />
+                <Route path='*' element={<NotFound/>}/>
               </Routes>
               <Footer />
             </div>

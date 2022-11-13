@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faFileLines } from "@fortawesome/free-regular-svg-icons";
-import { faBriefcase, faCertificate } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faCertificate, faBlog } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  
   const location = useLocation();
 
   return (
@@ -45,6 +46,15 @@ export default function Navbar() {
                 <FontAwesomeIcon icon={faCertificate} />
               </span>{" "}
               Certificates{" "}
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link className={classnames("menu-item text-[0.8rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] hover:bg-[#F4C9A5] dark:bg-[#1D1D1D] dark:hover:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)] hover:shadow-none", location.pathname.indexOf("/blogs") === 0 && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./blogs">
+              <span className="text-xl mb-1">
+                <FontAwesomeIcon icon={faBlog} />
+              </span>{" "}
+              Blogs{" "}
             </Link>
           </li>
         </ul>
