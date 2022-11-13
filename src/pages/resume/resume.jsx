@@ -21,7 +21,7 @@ const education = [
 const experiences = [
   {
     year: "JAN 2021 - NOV 2022",
-    name: "Web Development",
+    name: "Web Developer",
     location: "Exceed Digital Solutions",
     description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify.", "Host and manage website files with Inmotion Hosting, cPanel, and Core FTP LE.", "Website speed optimization and testing using Cloudflare CDN and GTMetrix.", "SMTP, Google Analytics and DNS Records verification and setup using Google Admin/Workspace and cPanel."],
   },
@@ -80,10 +80,10 @@ export default function Resume() {
             {experiences.map((experiences) => (
               <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {experiences.year} </span>
-                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {experiences.name} </h3>
-                <p className="text-[1rem] text-black dark:text-white"> {experiences.location} </p>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-5"> {experiences.name} </h3>
+                <p className="text-[0.92rem] text-black dark:text-white italic font-[500]"> {experiences.location} </p>
                 {experiences.description.map((description) => (
-                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
+                  <p className="text-[0.95rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
                 ))}
               </div>
             ))}
@@ -96,10 +96,10 @@ export default function Resume() {
             {education.map((education) => (
               <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
-                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-8"> {education.name} </h3>
-                <p className="text-[1rem] text-black dark:text-white"> {education.location} </p>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-5"> {education.name} </h3>
+                <p className="text-[0.92rem] text-black dark:text-white italic font-[500]"> {education.location} </p>
                 {education.description.map((description) => (
-                  <p className="text-[0.9rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
+                  <p className="text-[0.95rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
                 ))}
               </div>
             ))}
