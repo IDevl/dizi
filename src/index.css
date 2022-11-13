@@ -166,3 +166,16 @@ html[class='dark'] {
 .fslightbox-open {
     overflow: auto !important;
 }
+
+/* #profile-container {
+    animation: animateProfile 4s 0s ease-out alternate infinite;
+}
+
+@keyframes animateProfile {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1%);
+    }
+} */

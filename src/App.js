@@ -109,7 +109,7 @@ export default function App() {
             <div data-aos="fade-left" className="aos-element">
               <Navbar />
             </div>
-            <div data-aos="fade-up" className="aos-element lg:rounded-2xl bg-white dark:bg-[#111111] overflow-hidden">
+            <div id="sub-container" data-aos="fade-up" className="aos-element lg:rounded-2xl bg-white dark:bg-[#111111] overflow-hidden">
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />

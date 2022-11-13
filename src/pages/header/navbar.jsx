@@ -8,7 +8,7 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <header className="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
+    <header id="navbar-container" className="lg:w-fit h-fit hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
       <nav className="hidden lg:block">
         <ul className="flex gap-3.5">
           <li>
