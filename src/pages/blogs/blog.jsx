@@ -24,7 +24,7 @@ export default function Blog({ setModalImage }) {
     <>
       {currentBlog && (
         <div className="container lg:pt-10 pb-10 px-2 sm:px-5 md:px-10">
-          <h2 className="page-title-headline text-black dark:text-[white] md:items-center md:gap-7 text-[1.8rem] leading-[1.4] font-[600] mb-4">{currentBlog.title}</h2>
+          <h2 className="page-title-headline text-black dark:text-[white] md:items-center md:gap-7 text-[2rem] leading-[1.4] font-[600] mb-4">{currentBlog.title}</h2>
 
           {currentBlog.content.map((content) => (
             <p className="mt-3 text-[0.95rem] text-black dark:text-white leading-8">{content}</p>
