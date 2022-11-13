@@ -23,13 +23,13 @@ const experiences = [
     year: "JAN 2021 - NOV 2022",
     name: "Web Development",
     location: "Exceed Digital Solutions",
-    description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify.", "Coordinates with the team to resolve conflicts, prioritize needs and develop content criteria of a website using CMS tools and platforms.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
+    description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify.", "Host and manage website files with Inmotion Hosting, cPanel, and Core FTP LE.", "Website speed optimization and testing using Cloudflare CDN and GTMetrix.", "SMTP, Google Analytics and DNS Records verification and setup using Google Admin/Workspace and cPanel."],
   },
   {
     year: "APR 2022 - JUL 2022",
     name: "Internship",
     location: "Exceed Digital Solutions",
-    description: ["Practiced of scripting languages, primarily jQuery and JavaScript frameworks and libraries to meet all the needed functionalities of a website.", "Trained to use management tools, content creation tools, applications, and digital media."],
+    description: ["Practiced of scripting languages, primarily jQuery and JavaScript frameworks and libraries to implement all the needed functionalities of a website.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
   },
 ];
 
