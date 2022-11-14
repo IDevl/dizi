@@ -38,39 +38,32 @@ export default function HeaderMobile() {
         <Link className={classnames("menu-item text-[1rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./">
           <span className="text-[1rem] mb-1">
             <FontAwesomeIcon icon={faUser} className="flex items-center justify-center" />
-          </span>{"About"}
+          </span>
+          {"About"}
         </Link>
-        <Link
-          className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/resume" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")}
-          to="./resume"
-        >
+        <Link className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/resume" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./resume">
           <span className="text-[1rem] mb-1">
             <FontAwesomeIcon icon={faFileLines} className="flex items-center justify-center" />
-          </span>{"Resume"}
+          </span>
+          {"Resume"}
         </Link>
-        <Link
-          className={classnames("menu-item text-[1rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/projects" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")}
-          to="./projects"
-        >
+        <Link className={classnames("menu-item text-[1rem] text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/projects" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./projects">
           <span className="text-[1rem] mb-1">
             <FontAwesomeIcon icon={faBriefcase} className="flex items-center justify-center" />
-          </span>{"Projects"}
+          </span>
+          {"Projects"}
         </Link>
-        <Link
-          className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/certificates" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")}
-          to="./certificates"
-        >
+        <Link className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname === "/certificates" && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./certificates">
           <span className="text-[1rem] mb-1">
             <FontAwesomeIcon icon={faCertificate} className="flex items-center justify-center" />
-          </span>{"Certificates"}
+          </span>
+          {"Certificates"}
         </Link>
-        <Link
-          className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname.indexOf("/blogs") === 0 && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")}
-          to="./blogs"
-        >
+        <Link className={classnames("menu-item text-black dark:hover:text-[white] dark:text-[white] bg-[#F3F6F6] dark:bg-[#1D1D1D] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]", location.pathname.indexOf("/blogs") === 0 && "bg-[#F4C9A5] dark:bg-gradient-to-l from-[#df0000] to-[#550089] shadow-none")} to="./blogs">
           <span className="text-[1rem] mb-1">
             <FontAwesomeIcon icon={faBlog} className="flex items-center justify-center" />
-          </span>{"Blogs"}
+          </span>
+          {"Blogs"}
         </Link>
       </div>
     </div>
