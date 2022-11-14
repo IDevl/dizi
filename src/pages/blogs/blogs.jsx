@@ -24,7 +24,7 @@ export default function Blogs() {
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
           <Masonry gutter="2rem" className="mt-14 min-h-[100vh]">
             {blogs.map((blogs, index) => (
-              <Link key={index} className="grid-item w-full bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] rounded-lg shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)] duration-300">
+              <div key={index} className="grid-item w-full bg-[#F3F6F6] dark:bg-transparent p-6 border-[2px] border-[#F3F6F6] dark:border-[#212425] rounded-lg shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)] duration-300">
                 <div className="overflow-hidden">
                   <img className="w-full h-auto mt-1" src={blogs.featuredImage} alt={blogs.featuredImage} />
                 </div>
@@ -33,7 +33,7 @@ export default function Blogs() {
                 <Link className="text-[0.9rem] font-[600] text-black dark:text-white hover:text-[#F4C9A5] dark:hover:text-[#df0000] duration-[0.2s]" to={"./" + slugify(blogs.title)}>
                   Read More
                 </Link>
-              </Link>
+              </div>
             ))}
           </Masonry>
         </ResponsiveMasonry>
