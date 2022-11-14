@@ -15,11 +15,11 @@ export default function HeaderMobile() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (prevScrollY.current < currentScrollY && currentScrollY > 100 && !scrollDown) {
+      if (prevScrollY.current < currentScrollY && currentScrollY > 150 && !scrollDown) {
         setScrollDown(true);
         document.getElementById("nav-mobile").style.transform = "translateY(96px)";
       }
-      if (prevScrollY.current > currentScrollY && currentScrollY > 100 && scrollDown) {
+      if (prevScrollY.current > currentScrollY && scrollDown) {
         setScrollDown(false);
         document.getElementById("nav-mobile").style.transform = "translateY(0px)";
       }
