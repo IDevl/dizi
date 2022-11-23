@@ -9,9 +9,11 @@ export default function HeaderPC() {
     if (theme === "dark") {
       localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
+      document.getElementById("favicon").href = "./img/logos/favicon-dark.ico";
     } else {
       localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
+      document.getElementById("favicon").href = "./img/logos/favicon-light.ico";
     }
   }, [theme]);
   return (
