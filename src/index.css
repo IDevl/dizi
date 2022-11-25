@@ -26,17 +26,18 @@
         background-position: center;
     }
 
-    .links {
+    .links, 
+    .links::selection {
         background: -webkit-linear-gradient(left, #ff0000, #9e00ff);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100% 100%;
+        -webkit-text-fill-color: transparent !important;
+        background-size: 300% 100%;
         background-repeat: no-repeat;
         transition: 400ms;
     }
 
     .links:hover {
-        background-size: 300% 100%;
+        background-size: 100% 100%;
     }
 
     .menu-item {
@@ -188,4 +189,14 @@ html[class='dark'] {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+html ::selection {
+    color: black;
+    background-color: #fde0c7;
+}
+
+html[class='dark'] ::selection {
+    color: white;
+    background-color: #6500a3;
 }
