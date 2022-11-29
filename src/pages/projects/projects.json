@@ -104,6 +104,14 @@
     "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
   },
   {
+    "image": "/img/projects/southsunday.png",
+    "title": "South Sunday Sports",
+    "category": "Website Development",
+    "description": "The South Sunday Sports was formed 3 years ago as a basketball developmental league called the South Sunday Basketball Invitational League (SSBIL).",
+    "link": "https://southsunday.com",
+    "skills": ["Wordpress", "Themeco", "Inmotion", "Figma"]
+  },
+  {
     "image": "/img/projects/integrammarketing.png",
     "title": "Integral Marketing",
     "category": "Website Development",
