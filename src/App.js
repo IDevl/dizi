@@ -105,7 +105,7 @@ export default function App() {
         {loader && <Loader />}
         <HeaderPC />
         <div className="lg:container grid grid-cols-12 md:gap-10 justify-between lg:mt-[200px]">
-          <div data-aos="fade-right" className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[170px]">
+          <div data-aos="fade-right" className="aos-element col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-[170px] mb-[170px]">
             <Profile />
           </div>
           <div className="col-span-12 lg:col-span-8">
