@@ -8,28 +8,34 @@ const education = [
     year: "JUN 2018 - OCT 2022",
     name: "BS Information Technology",
     location: "Polytechnic University of the Philippines",
-    description: ['Lead, design, and developed an educational android game application entitled "Gosu Kid" for the learning of Grade Three students.', "Facilitates academic and development collaboration with colleagues in project-making.", "Graduated Cum Laude."],
+    description: ['Lead, design, and developed an educational android game application entitled "Gosu Kid" for the learning of Grade Three students', "Facilitates academic and development collaboration with colleagues in project-making", "Graduated Cum Laude"],
   },
   {
     year: "JUNE 2016 - APR 2018",
     name: "STEM Strand",
     location: "Systems Technology Institute College",
-    description: ["Pursue a degree focusing on mathematics and engineering.", "Gain the foundational knowledge to solve real-world problems and keep up with technological advancements in fields of Information technology, engineering, and medicine."],
+    description: ["Pursue a degree focusing on mathematics and engineering.", "Gain the foundational knowledge to solve real-world problems and keep up with technological advancements in fields of Information technology, engineering, and medicine"],
   },
 ];
 
 const experiences = [
   {
+    year: "DEC 2022 - PRESENT",
+    name: "Associate - Technology Consulting",
+    location: "SGV & Co. (EY Philippines)",
+    description: ["Digital & Emerging Technologies | Full Stack Development", "Currently taking necessary trainings for future project engagements and deep analysis in Full Stack Development and its processes"],
+  },
+  {
     year: "JAN 2021 - NOV 2022",
     name: "Web Developer",
     location: "Exceed Digital Solutions",
-    description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify.", "Host and manage website files with Inmotion Hosting, cPanel, and Core FTP LE.", "Website speed optimization and testing using Cloudflare CDN and GTMetrix.", "SMTP, Google Analytics and DNS Records verification and setup using Google Admin/Workspace and cPanel."],
+    description: ["Developed, maintained, and optimized responsive websites with WordPress and Shopify", "Host and manage website files with Inmotion Hosting, cPanel, and Core FTP LE", "Website speed optimization and testing using Cloudflare CDN and GTMetrix", "SMTP, Google Analytics and DNS Records verification and setup using Google Admin/Workspace and cPanel"],
   },
   {
     year: "APR 2022 - JUL 2022",
     name: "Internship",
     location: "Exceed Digital Solutions",
-    description: ["Practiced of scripting languages, primarily jQuery and JavaScript frameworks and libraries to implement all the needed functionalities of a website.", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types."],
+    description: ["Practiced of scripting languages, primarily jQuery and JavaScript frameworks and libraries to implement all the needed functionalities of a website", "Developed and validates test routines and schedules to ensure that test cases mimic external interfaces and address all browser and device types"],
   },
 ];
 
@@ -80,7 +86,7 @@ export default function Resume() {
             {experiences.map((experiences) => (
               <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {experiences.year} </span>
-                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-5"> {experiences.name} </h3>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-7"> {experiences.name} </h3>
                 <p className="text-[0.92rem] text-black dark:text-white italic font-[500]"> {experiences.location} </p>
                 {experiences.description.map((description) => (
                   <p className="text-[0.95rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
@@ -96,7 +102,7 @@ export default function Resume() {
             {education.map((education) => (
               <div className="mt-8 py-4 pl-5 pr-3 space-y-2 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
                 <span className="text-[1rem] text-black dark:text-[#b7b7b7]"> {education.year} </span>
-                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-5"> {education.name} </h3>
+                <h3 className="text-[1.35rem] text-black dark:text-white font-semibold tracking-[1.2px] leading-7"> {education.name} </h3>
                 <p className="text-[0.92rem] text-black dark:text-white italic font-[500]"> {education.location} </p>
                 {education.description.map((description) => (
                   <p className="text-[0.95rem] text-black dark:text-[#b7b7b7]"> &#x2022; {description} </p>
