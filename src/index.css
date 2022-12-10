@@ -156,6 +156,7 @@
 html {
     --scrollbar-color: black;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 html[class='dark'] {

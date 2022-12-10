@@ -19,11 +19,11 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactGA from "react-ga4";
+import BackToTop from "./pages/backtotop/backtotop";
 
 ReactGA.initialize("G-YTEG7EMDSR");
 
 export default function App() {
-
   const location = useLocation();
 
   const [loader, setLoader] = useState(null);
@@ -119,17 +119,18 @@ export default function App() {
                 <Route path="/projects" element={<Projects setModalData={setModalData} />} />
                 <Route path="/certificates" element={<Certificates setModalData={setModalData} setModalImage={setModalImage} />} />
                 <Route path="/blogs" element={<Blogs />} />
-                <Route path="/blogs/:slug" element={<Blog setModalImage={setModalImage}/>} />
-                <Route path='*' element={<NotFound/>}/>
+                <Route path="/blogs/:slug" element={<Blog setModalImage={setModalImage} />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />
             </div>
           </div>
         </div>
+        <BackToTop />
         <HeaderMobile />
       </div>
 
-      {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} modalImage={selectedModalImage} setModalImage={setModalImage}/>}
+      {selectedModalData && <Modal modalData={selectedModalData} unsetModalData={unsetModalData} modalImage={selectedModalImage} setModalImage={setModalImage} />}
 
       {selectedModalImage && <ModalImage modalImage={selectedModalImage} unsetModalImage={unsetModalImage} />}
     </>
