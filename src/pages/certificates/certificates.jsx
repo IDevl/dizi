@@ -31,6 +31,10 @@ export default function Certificates({ setModalData }) {
             {" "}
             PUP{" "}
           </li>
+          <li className={classnames("cursor-pointer mr-4 md:mx-4 duration-[0.4s] text-black dark:text-white", category === "Udemy Cert" && "text-[#F4C9A5] dark:text-[#bf58ff]")} onClick={() => setCategory("Udemy Cert")}>
+            {" "}
+            Udemy{" "}
+          </li>
         </ul>
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 767: 2 }}>
           <Masonry gutter="2rem" className="mt-8">
