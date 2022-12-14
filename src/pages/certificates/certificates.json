@@ -1,5 +1,13 @@
 [
   {
+    "image": "/img/certificates/project-management-essentials-udemy.png",
+    "title": "Project Management Essentials",
+    "category": "Udemy Certificate",
+    "description": "This certificate above verifies that Jefferson Dela Cruz successfully completed the course Project Management Essentials on 12/14/2022 as taught by William Stewart PhD, PMP on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.",
+    "link": "https://www.udemy.com/certificate/UC-d5a66bda-4ae0-4b9d-a1d2-4d5803925413/",
+    "skills": ["Project Management", "Risk Management"]
+  },
+  {
     "image": "/img/certificates/filmora-dict.png",
     "title": "Video Editing Techniques Using Filmora",
     "category": "DICT Certificate",
@@ -83,13 +91,5 @@
     "description": "75 minutes of learning session on the 6 Ways of Business Development.",
     "link": "https://file.reskills.com/micro-cert/136622_p4kbjpVt7K_992_2022-04-14.pdf",
     "skills": ["Market", "Analysis", "Sales", "Business", "Marketing", "Feedback"]
-  },
-  {
-    "image": "/img/certificates/project-management-essentials-udemy.png",
-    "title": "Project Management Essentials",
-    "category": "Udemy Certificate",
-    "description": "This certificate above verifies that Jefferson Dela Cruz successfully completed the course Project Management Essentials on 12/14/2022 as taught by William Stewart PhD, PMP on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.",
-    "link": "https://www.udemy.com/certificate/UC-d5a66bda-4ae0-4b9d-a1d2-4d5803925413/",
-    "skills": ["Project Management", "Risk Management"]
   }
 ]
