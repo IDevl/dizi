@@ -7,7 +7,7 @@ export default function Profile() {
     <>
       <div className="w-full flex flex-col items-center mb-6 lg:mb-0 mx-auto relative text-center bg-white dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
         <a className="-mt-[140px] w-fit" href="./">
-          <img id="profile-container" src={process.env.PUBLIC_URL + "/img/about/profile-pic.jpg"} className="w-[240px] h-[240px] drop-shadow-xl mx-auto rounded-[20px] object-cover object-top" alt="Picture_Profile" />
+          <img id="profile-container" src={process.env.PUBLIC_URL + "/img/about/profile-pic.png"} className="w-[240px] h-[240px] drop-shadow-xl mx-auto rounded-[20px] object-cover object-top" alt="Picture_Profile" />
         </a>
         <div className="pb-8 flex flex-col items-center">
           <h2 className="mt-6 mb-1 text-[26px] font-semibold text-black dark:text-white"> Jefferson Dela Cruz </h2>
