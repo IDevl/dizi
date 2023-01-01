@@ -84,7 +84,7 @@ export default function About() {
             <FontAwesomeIcon className="text-[#F4C9A5] dark:text-[#AF54D2] text-[25px]" icon={faMobile} />
             <div className="space-y-2">
               <h3 className="text-black dark:text-white text-[1.25rem] font-semibold"> Mobile Development </h3>
-              <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Knowledge of implementing user interfaces of mobile applications, primarily Flutter and React Native frameworks. </p>
+              <p className="leading-8 text-black dark:text-[#b3b3b3] text-[0.9rem]"> Knowledge of mobile application development with Expo and React Native. </p>
             </div>
           </div>
           <div className="flex items-start gap-4 p-5 rounded-xl border-[1px] border-[#F3F6F6] dark:border-[#383838] bg-[#F3F6F6] dark:bg-transparent shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]">
