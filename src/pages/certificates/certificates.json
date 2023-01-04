@@ -8,6 +8,14 @@
     "skills": ["Project Management", "Risk Management"]
   },
   {
+    "image": "/img/certificates/full-javascript-tutorial-es6-jan42023.png",
+    "title": "The Full JavaScript & ES6 Tutorial - (including ES7 & React) ",
+    "category": "Udemy Certificate",
+    "description": "This certificate above verifies that Jefferson Dela Cruz successfully completed the course The Full JavaScript & ES6 Tutorial - (including ES7 & React) on 01/04/2023 as taught by David Joseph Katz on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.",
+    "link": "https://www.udemy.com/certificate/UC-546e46e0-8052-4120-9795-d87c3484165e/",
+    "skills": ["Javascript", "ES6", "ES7", "React", "Webpack", "Babel"]
+  },
+  {
     "image": "/img/certificates/filmora-dict.png",
     "title": "Video Editing Techniques Using Filmora",
     "category": "DICT Certificate",
