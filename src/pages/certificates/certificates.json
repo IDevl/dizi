@@ -9,11 +9,19 @@
   },
   {
     "image": "/img/certificates/full-javascript-tutorial-es6-jan42023.png",
-    "title": "The Full JavaScript & ES6 Tutorial - (including ES7 & React) ",
+    "title": "The Full JavaScript & ES6 Tutorial - (including ES7 & React)",
     "category": "Udemy Certificate",
     "description": "This certificate above verifies that Jefferson Dela Cruz successfully completed the course The Full JavaScript & ES6 Tutorial - (including ES7 & React) on 01/04/2023 as taught by David Joseph Katz on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.",
     "link": "https://www.udemy.com/certificate/UC-546e46e0-8052-4120-9795-d87c3484165e/",
     "skills": ["Javascript", "ES6", "ES7", "React", "Webpack", "Babel"]
+  },
+  {
+    "image": "/img/certificates/REST API Design, Development & Management.png",
+    "title": "REST API Design, Development & Management",
+    "category": "Udemy Certificate",
+    "description": "This certificate above verifies that Jefferson Dela Cruz successfully completed the course REST API Design, Development & Management on 01/06/2023 as taught by Rajeev Sakhuja on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.",
+    "link": "https://www.udemy.com/certificate/UC-00096da8-c699-44e1-b474-712355aa545d/",
+    "skills": ["API", "REST", "Swagger", "JSON", "YAML"]
   },
   {
     "image": "/img/certificates/filmora-dict.png",
