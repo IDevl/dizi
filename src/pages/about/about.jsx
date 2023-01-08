@@ -64,7 +64,7 @@ export default function About() {
           <div className="col-span-12 space-y-2.5">
             <p className="text-black dark:text-[#b3b3b3] leading-8 text-[1rem]">
               {" "}
-              An enthusiast in application and software development, expanding in-depth knowledge and skills in programming and development through developing real-world projects in the field of Information Technology. <br></br> <br></br> Currently working as an Associate in Technology Consulting at SGV &amp; Co. (EY Philippines).
+              An enthusiast in application/software development and currently expanding in-depth knowledge and skills in full stack development by engaging in real-world projects for the clients of {"SGV & Co. (EY Philippines)"}.
             </p>
           </div>
         </div>
